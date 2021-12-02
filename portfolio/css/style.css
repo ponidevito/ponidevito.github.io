@@ -1,4 +1,4 @@
-@import '~css/reset.css';
+@import url(css/reset.css);
 @import url(css/fonts.css);
 @import url(dropMenu.css);
 
