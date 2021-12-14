@@ -848,6 +848,9 @@ header {
   .box {
     margin-top: 20px;
   }
+  .section_free{
+  min-height: 106vh
+  }
   .container_footer {
     display: unset;
   }
