@@ -1,0 +1,190 @@
+@import "../base/reset";
+@import "../css/fonts";
+@import "../base/mixin";
+
+$color-white: #ffffff;
+
+.html,
+.body {
+  height: 100%;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  @include flex-box;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  .img_header {
+    position: relative;
+    width: 100%;
+    @media screen and (max-width: 1240px) {
+      display: none;
+    }
+  }
+  .image_768 {
+    display: none;
+    @media screen and (max-width: 1240px) {
+      display: block;
+      @media screen and (max-width: 320px) {
+        display: none;
+      }
+    }
+  }
+  .image_320 {
+    display: none;
+    @media screen and (max-width: 320px) {
+      display: block;
+    }
+  }
+  .container_header {
+    width: 950px;
+    position: absolute;
+    @media screen and (max-width: 1240px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+    @media screen and (max-width: 320px) {
+      width: 100%;
+    }
+
+    .nav_menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 118px;
+      @media screen and (max-width: 570px) {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        height: 170px;
+      }
+      @media screen and (max-width: 320px) {
+        margin-top: 10px;
+        flex-direction: column-reverse;
+        height: 165px;
+      }
+
+      .h1_header {
+        padding-left: 4px;
+        @include font-list("Montserrat", 20px, #ffffff);
+        font-weight: bold;
+        line-height: 24px;
+        @media screen and (max-width: 1240px) {
+          margin-right: 0px;
+        }
+        @media screen and (max-width: 570px) {
+          font-size: 30px;
+        }
+      }
+      .links_header {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        @media screen and (max-width: 570px) {
+          margin-right: 0px;
+        }
+        @media screen and (max-width: 320px) {
+          margin-right: 0px;
+        }
+        .first_link {
+          padding-right: 20px;
+          @include font-list("Montserrat", 14px, #ffffff);
+          line-height: 17px;
+          @media screen and (max-width: 570px) {
+            padding-right: 60px;
+          }
+        }
+        .border {
+          margin-right: 25px;
+          @include flex-center;
+          border: 2px solid #ffffff;
+          box-sizing: border-box;
+          border-radius: 40px;
+          @include size(90px, 36px);
+          @media screen and (max-width: 1240px) {
+            margin-right: 0px;
+          }
+          .secondLink {
+            @include font-list("Montserrat", 14px, #ffffff);
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .text_header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    @include size(470px, 700px);
+    @media screen and (max-width: 570px) {
+      width: 100%;
+      justify-content: center;
+    }
+    @media screen and (max-width: 320px) {
+      @include size(80%, 539px);
+    }
+    .box_text {
+      @include flex-box;
+      @include size(470px, 252px);
+      justify-content: space-between;
+      @media screen and (max-width: 320px) {
+        margin-top: 45px;
+        @include size(100%, 200px);
+        justify-content: space-evenly;
+      }
+
+      .title_header {
+        @include font-list("Montserrat", 52px, #ffffff);
+        font-weight: bold;
+        line-height: 63px;
+        text-align: center;
+        @media screen and (max-width: 570px) {
+          font-size: 29px;
+        }
+        @media screen and (max-width: 320px) {
+          font-size: 23px;
+        }
+        @media screen and (max-width: 320px) {
+          font-size: 28px;
+          line-height: 37px;
+        }
+      }
+      .subtitle_header {
+        @include font-list("Roboto", 24px, #f7f3f2);
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        @media screen and (max-width: 320px) {
+          font-size: 18px;
+        }
+      }
+      .button_header {
+        @include size(225px, 40px);
+        background: #ff4e50;
+        border-radius: 40px;
+        &:hover {
+          background-color: #ee3134;
+          transition-duration: 0.4s;
+        }
+        .a_button_header {
+          @include flex-center;
+          @include size(225px, 40px);
+          @include font-list("Montserrat", 14px, #ffffff);
+          font-weight: bold;
+          line-height: 17px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
