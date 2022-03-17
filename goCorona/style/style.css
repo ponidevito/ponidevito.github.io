@@ -60,6 +60,7 @@ body {
   font-family: Rubik;
   font-size: 12px;
   color: #616161;
+  background-color: #fafbfd;
 }
 
 .wrapper {
@@ -96,6 +97,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 0px 15px;
+}
+
+.header_container .header_logo .nightLogo {
+  display: none;
+}
+
+.header_container .header_logo .nightLogo.open {
+  display: block;
 }
 
 .header_menu {
@@ -162,6 +171,58 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header_button .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+@media (max-width: 479.98px) {
+  .header_button .label {
+    margin-right: 10px;
+  }
+}
+
+.header_button .label input[type="checkbox"] {
+  -webkit-appearance: none;
+}
+
+.header_button .label .check {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 20px;
+  background-color: #272121;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+}
+
+.header_button .label .check::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
+}
+
+.header_button .label input[type="checkbox"]:checked ~ .check {
+  background-color: #fff;
+}
+
+.header_button .label input[type="checkbox"]:checked ~ .check::after {
+  background-color: #272121;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
 }
 
 .button {
@@ -248,6 +309,9 @@ body {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+  .dark {
+    background-color: #202124;
+  }
   .header:target .menu_body {
     left: 0;
   }
@@ -259,6 +323,9 @@ body {
     width: 100%;
     height: 80px;
     background-color: #fff;
+  }
+  .dark::before {
+    background-color: #202124 !important;
   }
   .menu_list {
     -webkit-box-orient: vertical;
@@ -308,6 +375,12 @@ body {
     content: "";
     background-color: #000;
     height: 2px;
+  }
+  .white::before {
+    background-color: #eee;
+  }
+  .white::after {
+    background-color: #eee;
   }
   .spanBurger {
     height: 2px;
@@ -428,6 +501,11 @@ body {
   color: #4285f4;
 }
 
+.get_started .get_started_container .get_started_content .block_text .title_text.dark-theme {
+  color: #eee;
+  background: #202124;
+}
+
 .get_started .get_started_container .get_started_content .block_text .main_text {
   width: 290px;
   font-family: "Rubik";
@@ -436,6 +514,10 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 138.5%;
+}
+
+.get_started .get_started_container .get_started_content .block_text .main_text.white {
+  color: #eee;
 }
 
 .get_started .get_started_container .get_started_content .p_text:not(:last-child) {
@@ -547,6 +629,10 @@ body {
   line-height: 126%;
   letter-spacing: 0.165em;
   text-transform: uppercase;
+}
+
+.get_started .video_body .video_body_text.dark-theme {
+  color: #eee;
 }
 
 /* ====================================  section get started   ==============================================*/
@@ -710,6 +796,11 @@ body {
   color: #ec5863;
 }
 
+.stay_safe .stay_safe_container .stay_safe_content .stay_safe_block_text .title_text.dark-theme {
+  color: #eee;
+  background: #202124;
+}
+
 .stay_safe .stay_safe_container .stay_safe_content .stay_safe_block_text .main_text {
   font-family: "Rubik";
   font-size: 12px;
@@ -717,6 +808,10 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 138.5%;
+}
+
+.stay_safe .stay_safe_container .stay_safe_content .stay_safe_block_text .main_text.white {
+  color: #eee;
 }
 
 .stay_safe .stay_safe_container .stay_safe_content .stay_safe_block_text .p_text {
@@ -729,10 +824,6 @@ body {
 
 /* ====================================  section stay safe   ==============================================*/
 /* ====================================  section experts   ==============================================*/
-.experts {
-  background-color: #fafbfd;
-}
-
 .experts .experts_container {
   position: relative;
   padding: 0px 20px 205px 20px;
@@ -894,6 +985,10 @@ body {
           transform: rotate(-30deg);
 }
 
+.experts .experts_container .experts_top_block .experts_top_block_1.white {
+  background-color: #eee;
+}
+
 .experts .experts_container .experts_bottom_block .experts_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -956,6 +1051,11 @@ body {
   color: #587eec;
 }
 
+.experts .experts_container .experts_bottom_block .experts_content .experts_block_text .title_text.dark-theme {
+  color: #eee;
+  background: #202124;
+}
+
 .experts .experts_container .experts_bottom_block .experts_content .experts_block_text .main_text {
   font-family: "Rubik";
   font-size: 12px;
@@ -964,6 +1064,10 @@ body {
   font-weight: normal;
   line-height: 138.5%;
   letter-spacing: 0.08em;
+}
+
+.experts .experts_container .experts_bottom_block .experts_content .experts_block_text .main_text.white {
+  color: #eee;
 }
 
 .experts .experts_container .experts_bottom_block .experts_content .experts_block_text .p_text:not(:last-child) {
@@ -1053,6 +1157,11 @@ body {
   color: #ec5863;
 }
 
+.healthcare .healthcare_container .healthcare_block_text .title_text.dark-theme {
+  color: #eee;
+  background: #202124;
+}
+
 .healthcare .healthcare_container .healthcare_block_text .main_text {
   margin: 0 auto;
   max-width: 600px;
@@ -1064,6 +1173,10 @@ body {
   font-weight: normal;
   line-height: 138.5%;
   letter-spacing: 0.08em;
+}
+
+.healthcare .healthcare_container .healthcare_block_text .main_text.white {
+  color: #eee;
 }
 
 .healthcare .healthcare_container .healthcare_block_text .p_text:not(:last-child) {
@@ -1200,6 +1313,14 @@ body {
   letter-spacing: 0.08em;
 }
 
+.healthcare .healthcare_container .healthcare_items .item-healthcare_text.white {
+  color: #eee;
+}
+
+.healthcare .healthcare_container .healthcare_items .item-healthcare.white {
+  background-color: #eee;
+}
+
 /* ====================================  section healthcare   ==============================================*/
 /* ====================================  main   ==============================================*/
 /*=============================== footer =============================== */
@@ -1230,5 +1351,18 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.dark-theme {
+  color: #eee;
+  background: #202124;
+}
+
+.hide {
+  display: none;
+}
+
+.open {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
