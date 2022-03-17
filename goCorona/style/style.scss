@@ -100,7 +100,7 @@ body {
         background-color: #272121;
         cursor: pointer;
         border-radius: 20px;
-        transition: ease-in 0.5s;
+        transition: ease-in 0.3s;
       }
       .check::after {
         content: "";
@@ -111,7 +111,7 @@ body {
         left: 2px;
         background-color: #fff;
         border-radius: 50%;
-        transition: ease-in 0.5s;
+        transition: ease-in 0.3s;
       }
       input[type="checkbox"]:checked ~ .check {
         background-color: #fff;
