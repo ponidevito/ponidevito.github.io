@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="../corona/style/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Rubik:regular,700&display=swap"
       rel="stylesheet"
@@ -23,8 +23,11 @@
         <div id="close" class="header_container">
           <!-- header logo -->
           <a href="#" class="header_logo">
-            <img src="images/header/logo.png" alt="logo" />
+            <img src="images/header/logo.png" class="dayLogo" alt="logo" />
+            <img src="images/header/night.png" class="nightLogo" alt="logoNightTheme" />
           </a>
+          
+
           <div class="header_menu menu">
             <nav class="menu_body">
               <!-- links -->
@@ -45,7 +48,15 @@
             </nav>
           </div>
 <!-- header button -->
+
           <div class="header_button">
+            <!-- <button class="btn-toggle">Night</button> -->
+            
+            <label class="label">
+              <input type="checkbox" class="btn-toggle">
+              <span class='check'></span>
+          </label>
+          
             <a href="#" class="button button_blue">DOWNLOAD</a>
             <!-- burger menu -->
             <a href="#open" class="icon_menu"
@@ -260,5 +271,6 @@
         </div>
       </footer>
     </div>
+    <script src="../corona/style/script.js"></script>
   </body>
 </html>
