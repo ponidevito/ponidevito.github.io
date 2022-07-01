@@ -128,6 +128,11 @@ body {
   }
 }
 
+
+
+
+
+
 /*==============  HEADER  ===========  */
 
 /*==============  MAIN  ===========  */
@@ -151,7 +156,7 @@ main {
       box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
       color: #444;
       cursor: pointer;
-      padding: 24px;
+      padding: 15px;
       width: 62%;
       display: flex;
       align-items: center;
@@ -227,9 +232,11 @@ main {
 .accordion__content {
   &::after {
     content: url("../images/plus.svg");
+    padding: 10px;
   }
   &.active::after {
     content: url("../images/minus.png");
+    padding: 7px;
   }
 }
 
