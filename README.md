@@ -1,2 +1,2 @@
 # ponidevito.github.io
-pet-projects
+projects
