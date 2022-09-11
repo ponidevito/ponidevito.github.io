@@ -610,6 +610,14 @@ h6 {
   padding-bottom: 20px;
 }
 
+.trends__slider .swiper-button-disabled.button-prev {
+  opacity: 0.3;
+}
+
+.trends__slider .swiper-button-disabled.button-next {
+  opacity: 0.3;
+}
+
 .trends__slider .content__body {
   padding-top: 100px;
   display: -webkit-box;
