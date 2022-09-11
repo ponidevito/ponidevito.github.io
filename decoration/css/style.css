@@ -2170,6 +2170,7 @@ body {
   }
 
   .header .menu__icon._active::before {
+    background-color: #A06056;
     top: 50%;
     -webkit-transform: rotate(-45deg) translate(0px, -70%);
         -ms-transform: rotate(-45deg) translate(0px, -70%);
@@ -2177,6 +2178,7 @@ body {
   }
 
   .header .menu__icon._active::after {
+    background-color: #A06056;
     bottom: 50%;
     -webkit-transform: rotate(40deg) translate(0px, 30%);
         -ms-transform: rotate(40deg) translate(0px, 30%);
@@ -2255,7 +2257,7 @@ body {
 
   .header .menu__link {
     font-size: 25px;
-    color: #a06056;
+    color: #A06056;
   }
 
   .header .effect {
