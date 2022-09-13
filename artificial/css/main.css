@@ -720,6 +720,7 @@ main {
 }
 
 .footer .lenguage #lang {
+  cursor:pointer;
   outline: none;
   padding: 0px 0px 0px 27px;
   width: 100px;
