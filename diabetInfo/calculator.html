@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Header -->
+    <!-- header -->
+<header class="header">
+    <div class="header__container">
+      <div class="header__items">
+      <a href="index.html" class="header__logo">
+       <img src="img/header/logo.png" alt="logo">
+      </a>
+      <div class="header__menu menu">
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html" class="lng-link menu__link ">Про діабет</a>
+            </li>
+            <li class="menu__item sub">
+              <a href="#" class="lng-link2 menu__link menu__linkSub ">Тип
+                <svg class="menu__link-svg" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="menu__item-svg" fill-rule="evenodd" clip-rule="evenodd" d="M9.53033 0.96967C9.82322 1.26256 9.82322 1.73744 9.53033 2.03033L5.53033 6.03033C5.23744 6.32322 4.76256 6.32322 4.46967 6.03033L0.46967 2.03033C0.176777 1.73744 0.176777 1.26256 0.46967 0.96967C0.762563 0.676777 1.23744 0.676777 1.53033 0.96967L5 4.43934L8.46967 0.96967C8.76256 0.676777 9.23744 0.676777 9.53033 0.96967Z" fill="#203239"/>
+                </svg>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu__item"><a href="type-1.html" class="submenu__link lng-link2-sub1">Тип 1</a></li>
+                  <li class="submenu__item"><a href="type-2.html" class="submenu__link">Тип 2</a></li>
+                </ul>
+            </li>
+            <li class="menu__item">
+              <a href="units.html" class="menu__link">Хлібна одиниця</a>
+            </li>
+            <li class="menu__item">
+              <a href="calculator.html" class="menu__link">Калькулятор ХО</a>
+            </li>
+          </ul>
+        </nav>
+      </div> 
+   
+      <div class="effect">
+        <div class="menu__icon">
+          <span class="span"></span>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+  </header>
+  
+
+    <!-- Main Page -->
+    <main class="main">
+
+             <!-- calculator -->
+             <section class="section__calculator global-section">
+    <div class="calculator__container">
+        <h1 class="calculator__title title">Калькулятор для підрахунку ХО</h1>
+        <div class="calculator__items">
+            <div class="calculator__item">
+            <form  class="calculator__form form" name="form">
+                <div class="form__btnBox">                          
+                    <input type="submit"  class="form__btn1 form-btn"  name="btn1" value="10">
+                    <input type="submit" class="form__btn2 form-btn"  name="btn2" value="12">
+                    <div class="form__resultBox">
+                    <div class="form__btnText">Хлібна <br> одиниця</div>
+                    <div class="form__result"></div>
+                 </div>
+            </div>
+              <label for="carbon" class="form__label">Вуглеводи в 100 грамах
+                <input type="number" name="carbohydrates" class="form__input input" value="" id="carbon">
+            </label>
+            <label for="weight" class="form__label">Загальна вага продукта в грамах
+                <input type="number" name="totalWeight" id="weight" class="form__input input">
+            </label>
+            <button class="form__resultBtn" disabled>Підрахунок</button>
+        
+            </form>
+            <a href="index.html" class="calculator__logo-item"><img src="img/calculator/logo.png" alt="logo" class="calculator__logo"></a>
+        </div>
+            <div class="calculator__item">
+                <div class="calculator__picture">
+                    <img src="img/calculator/calculator.jpg" alt="image" class="calculator__image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    
+
+
+    </div>
+    
+
+
+
+    <script src="./js/scripts.min.js"></script>
+</body>
+
+
+
+</html>
