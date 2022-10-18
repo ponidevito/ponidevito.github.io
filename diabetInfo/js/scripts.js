@@ -1,8 +1,6 @@
 // Custom Scripts
 // Custom scripts
 
-addEventListener('fetch', event => {  event.respondWith(handleRequest(event.request))})async function handleRequest(request) {  let response = await fetch(request)  let newHeaders = new Headers(response.headers)  newHeaders.set("Permissions-Policy", "interest-cohort=()")  return new Response(response.body, {    status: response.status,    statusText: response.statusText,    headers: newHeaders  })}
-
 const lins = document.getElementsByClassName("menu__item a");
 
 //burger js
@@ -138,28 +136,4 @@ if (document.querySelector(".section__calculator")) {
   btn1.addEventListener("click", checking);
   btn2.addEventListener("click", checking);
 }
-
-
-(function () {
-  const cohorts = "interestCohort";
-  const documentProto = Document.prototype;
-  const flocSupported = cohorts in documentProto;
-
-  if (!flocSupported) {
-    return;
-  }
-
-  const descriptor = Object.getOwnPropertyDescriptor(documentProto, cohorts);
-  const writable = descriptor && descriptor.writable;
-  if (writable) {
-    const proxy = new Proxy(documentProto[cohorts], { apply: () => Promise.reject() });
-    const config = {
-      writable: false,
-      value: proxy,
-      configurable: false,
-      enumerable: false,
-    };
-    Object.defineProperty(documentProto, cohorts, config);
-  }
-})();
 
