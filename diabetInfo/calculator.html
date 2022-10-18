@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
     <title>Calculator</title>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -68,8 +68,9 @@
         <h1 class="calculator__title title">Калькулятор для підрахунку ХО</h1>
         <div class="calculator__items">
             <div class="calculator__item">
+                
             <form  class="calculator__form form" name="form">
-                <div class="form__btnBox">                          
+                <div class="form__btnBox">                        
                     <input type="submit"  class="form__btn1 form-btn"  name="btn1" value="10">
                     <input type="submit" class="form__btn2 form-btn"  name="btn2" value="12">
                     <div class="form__resultBox">
@@ -78,7 +79,9 @@
                  </div>
             </div>
               <label for="carbon" class="form__label">Вуглеводи в 100 грамах
-                <input type="number" name="carbohydrates" class="form__input input" value="" id="carbon">
+                <input type="number" name="carbohydrates" min="0"  max="100"  class="form__input input" value="" id="carbon">
+                <div class="form__modal-carbon">Не більше 100 грам вуглеводів</div>
+                <div class="form__modal-carbon-second">Не менше 1 граму вуглеводів</div>
             </label>
             <label for="weight" class="form__label">Загальна вага продукта в грамах
                 <input type="number" name="totalWeight" id="weight" class="form__input input">
@@ -86,6 +89,7 @@
             <button class="form__resultBtn" disabled>Підрахунок</button>
         
             </form>
+           
             <a href="index.html" class="calculator__logo-item"><img src="img/calculator/logo.png" alt="logo" class="calculator__logo"></a>
         </div>
             <div class="calculator__item">
