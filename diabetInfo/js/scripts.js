@@ -37,6 +37,9 @@ html.addEventListener("click", function (e) {
     arrow.classList.remove("_active");
     menulink.classList.remove("_activeArrow");
     arrowRotate.classList.remove("_active");
+    document.querySelector(".form__modal-carbon").classList.remove("_active");
+    document.querySelector(".form__modal-carbon-second").classList.remove("_active");
+
   }
 });
 
@@ -46,6 +49,8 @@ if (document.querySelector(".section__calculator")) {
   let btnResult = document.querySelector(".form__resultBtn");
   let btnXo = document.querySelectorAll(".form-btn");
   let result = document.querySelector(".form__result");
+  let btn1 = document.querySelector(".form__btn1");
+  let btn2 = document.querySelector(".form__btn2");
   let massive = [];
   let mass = [];
   let xo = [];
@@ -54,6 +59,7 @@ if (document.querySelector(".section__calculator")) {
   let form = document.forms["form"];
   let carbohydrates = form.carbohydrates;
   let totalWeight = form.totalWeight;
+
   function addInfo(e) {
     btnXo.forEach((item) => {
       item.addEventListener("click", () => {
@@ -76,6 +82,7 @@ if (document.querySelector(".section__calculator")) {
   function check() {
     mass.push(carbohydrates.value);
     number.push(totalWeight.value);
+
     let sum = (mass / xo) * number;
     massive.push(sum);
     let a = Array.from(massive.toString(), Number);
@@ -83,6 +90,7 @@ if (document.querySelector(".section__calculator")) {
     let summa = parseFloat(finalSum);
 
     result.textContent += `${summa.toFixed(2) / 100} хо `;
+
     event.preventDefault();
     resetAll();
     return true;
@@ -103,11 +111,29 @@ if (document.querySelector(".section__calculator")) {
     return true;
   }
 
-  let carbonRegExp = /^[0-9]{2,20}$/;
+  let carbonRegExp = /^[0-9]{1,20}$/;
   carbohydrates.oninput = () => {
     let loginValid = carbonRegExp.test(carbohydrates.value);
+    console.log(loginValid);
     if (loginValid) {
       carbohydrates.style.border = "1px solid rgb(124, 231, 241)";
+    
+      if (carbohydrates.value > 100 ) {
+        document.querySelector(".form__modal-carbon").classList.add("_active");
+      
+      }
+     else if(carbohydrates.value < 1 ){
+      document.querySelector(".form__modal-carbon-second").classList.add("_active");
+        console.log("hhhhh")
+      }
+     
+       else {
+        document
+          .querySelector(".form__modal-carbon")
+          .classList.remove("_active");
+          document.querySelector(".form__modal-carbon-second").classList.remove("_active");
+      }
+      
     } else {
       carbohydrates.style.border = "1px solid red";
     }
@@ -121,12 +147,12 @@ if (document.querySelector(".section__calculator")) {
       totalWeight.style.border = "1px solid red";
     }
   };
-  let btn1 = document.querySelector(".form__btn1");
-  let btn2 = document.querySelector(".form__btn2");
 
   const checking = () =>
     (btnResult.disabled =
-      carbohydrates.value.length < 2 ||
+      carbohydrates.value.length < 1 ||
+      carbohydrates.value > 100 ||
+      carbohydrates.value < 1 ||
       totalWeight.value.length < 2 ||
       (btn1.style.backgroundColor !== "rgb(140, 211, 41)") &
         (btn2.style.backgroundColor !== "rgb(140, 211, 41)"));
@@ -135,5 +161,17 @@ if (document.querySelector(".section__calculator")) {
   totalWeight.addEventListener("input", checking);
   btn1.addEventListener("click", checking);
   btn2.addEventListener("click", checking);
+
+  // function checkInput() {
+  //   if (carbohydrates.value.length > 2) {
+  //     document.querySelector(".form__modal-carbon").classList.add("_active")
+  //   }
+  //   else{
+  //     document.querySelector(".form__modal-carbon").classList.remove("_active")
+  //   }
+
+  // }
+
+  //  btn1.addEventListener("click",checkInput)
 }
 
