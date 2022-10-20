@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Header -->
+    
+
+    <!-- Main Page -->
+    <main class="main">
+
+        <!-- calculator -->
+    <section class="section__calculator ">
+    <div class="calculator__container">
+        <div class="calculator__items">
+            <div class="calculator__item">
+                
+            <form  class="calculator__form form" name="form">
+                <div class="calculator__box">
+                <h2 class="calculator__title title lng-title">Калькулятор для підрахунку ХО</h2>
+                <div class="select is-active">
+                    <div class="select__header">
+                      <span class="select__current">EN</span>
+                      <div class="select__icon" id="selectIcon">
+                        </div>
+                    </div>
+                    <div class="select__body">
+                      <div class="select__item sel" onclick=" setFlag()">EN</div>
+                      <div class="select__item sel">ES</div>
+                      <div class="select__item sel">UA</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__btnBox">                        
+                    <input type="submit"  class="form__btn1 form-btn"  name="btn1" value="10">
+                    <input type="submit" class="form__btn2 form-btn"  name="btn2" value="12">
+                    <div class="form__resultBox">
+                    <div class="form__btnText lng-bread">Хлібна <br> одиниця</div>
+                    <div class="form__bread-units">
+                    <div class="form__result"></div>
+                    <div class="form__bread lng-bu">хо</div>
+                  </div>
+                 </div>
+            </div>
+              <label for="carbon" class=" form__label "><span class="lng-carbohydrates">Вуглеводи в 100 грамах</span>
+                <input type="number" name="carbohydrates" min="0"  max="100"  class="form__input input"  id="carbon">
+                <div class="form__modal-carbon lng-modal-carbon">Не більше 100 грам вуглеводів</div>
+                <div class="form__modal-carbon-second lng-modal-carbon-second">Не менше 1 граму вуглеводів</div>
+            </label>
+            <label for="weight" class="form__label "><span class="lng-total">Загальна вага продукта в грамах</span>
+                <input type="number" name="totalWeight" id="weight" class="form__input input">
+            </label>
+            <button class="form__resultBtn lng-count" disabled>Підрахунок</button>
+        
+            </form>
+          
+            <a href="index.html" class="calculator__logo-item"><img src="img/logo.png" alt="logo" class="calculator__logo"></a> 
+        </div>
+          
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    
+
+
+    </div>
+    
+
+
+
+    <script src="./js/scripts.min.js"></script>
+</body>
+
+
+
+</html>
