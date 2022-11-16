@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семінари</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+ <!-- scroll up -->
+<button id="topBtn" onclick="topFunction()">
+    <div class="topBox">
+            <svg width="24" height="45" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0607 0.93934C12.4749 0.353553 11.5251 0.353553 10.9393 0.93934L1.3934 10.4853C0.80761 11.0711 0.80761 12.0208 1.3934 12.6066C1.97918 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.93934ZM13.5 45L13.5 2L10.5 2L10.5 45L13.5 45Z" fill="white"/>
+            </svg>            
+    </div>
+</button>
+        <!-- Header -->
+    
+<header class="header">
+    <div class="header__container">
+      <div class="modal__wrapper">
+        <div class="modal">
+            <div class="modal__close"><img src="img/header/close.svg" alt="close"></div>
+            <div class="modal__title"><span>Залиште заявку </span></div>
+            <div class="modal__subtitle"><span>Ми зателефонуємо вам через 5 хвилин</span></div>
+            <div class="modal__body">
+              <form name="modal__form" class="modal__form">
+                <input type="text" class="form__input " placeholder="Марія" >
+                <label for="tel" class="form__label">
+                <input class="form__input tel" name="tel" id="tel" type="tel" placeholder="+ 38 (000) 000-00-00" required>
+                <p class="form__verif">Введіть номер телефона</p>
+              </label>
+                <input type="text" class="form__input " placeholder="Що вас турбує?" >
+              </form>
+              <button type="submit" class="modal-submit global-blue-btn">Зателефонуйте мені</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal__wrapper-second">
+      <div class="modal-second">
+          <div class="modal__title-second"><span>Ваша заявка прийнята.</span></div>
+          <div class="modal__subtitle-second"><span>Ми передзвонимо Вам найближчим часом</span></div>
+          <div class="modal__body-second">
+          
+          </div>
+      </div>
+  </div>
+
+      <div class="header__items">
+     
+      <div class="header__item item-modify">
+        <a href="#" class="header__logo"><img src="img/header/Logo.svg" class="header__logo-image" alt="logo"></a>
+        <div class="header__contacts contacts__header">
+          <a href="#" class="contacts__header-link">
+            <span class="contacts__header-icon">
+              <svg class="contacts__header-svg-frist" width="35" height="41" viewBox="0 0 35 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35 15.659C35 7.09835 27.1936 0.204407 17.5 0.204407C7.80637 0.204407 0 7.09835 0 15.659C0 24.2196 17.5 40.2044 17.5 40.2044C17.5 40.2044 35 24.2196 35 15.659ZM9.35049 15.3559C9.35049 11.4165 13.0392 8.15895 17.5 8.15895C21.9608 8.15895 25.6495 11.3408 25.6495 15.3559C25.6495 19.2953 22.0466 22.5529 17.5 22.5529C13.0392 22.5529 9.35049 19.2953 9.35049 15.3559Z" fill="#D3DDE6"/>
+                </svg>
+            </span>
+            <span class="contacts__header-text">Львів, вул. Зелена 44</span>
+          </a>
+          <a href="#" class="contacts__header-link link-dnone">
+            <span class="contacts__header-icon">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="23" height="23" rx="5" fill="#D3DDE6"/>
+                <path d="M15.9722 6.90039H7.02778C6.32208 6.90039 5.75 7.48882 5.75 8.21468V14.7861C5.75 15.512 6.32208 16.1004 7.02778 16.1004H15.9722C16.6779 16.1004 17.25 15.512 17.25 14.7861V8.21468C17.25 7.48882 16.6779 6.90039 15.9722 6.90039Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.75 8.625L11.5 12.075L17.25 8.625" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <span class="contacts__header-text">Львів, вул. Зелена 44</span>
+          </a>
+          <a href="#" class="contacts__header-link">
+            <span class="contacts__header-icon">
+              <svg class="contacts__header-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="5" fill="#D3DDE6"/>
+                <path d="M23.7333 21.4259C22.6667 22.6954 22.6667 23.9649 21.6 23.9649C20.5333 23.9649 19.4667 22.6954 18.4 21.4259C17.3333 20.1563 16.2667 18.8868 16.2667 17.6172C16.2667 16.3477 17.3333 16.3477 18.4 15.0782C19.4667 13.8086 16.2667 10 15.2 10C14.1333 10 12 13.8086 12 13.8086C12 16.3477 14.192 21.4957 16.2667 23.9649C18.3413 26.4342 22.6667 29.0431 24.8 29.0431C24.8 29.0431 28 26.504 28 25.2345C28 23.9649 24.8 20.1563 23.7333 21.4259Z" fill="white"/>
+                </svg>
+            </span>
+            <span class="contacts__header-text">+38 (097) 407-01-10</span>
+          </a>
+          <div class="contacts__header-box">
+          <a href="#" class="contacts__header-button global-blue-btn modal-button">Вам передзвонити?</a>
+        </div>
+        </div>
+      </div>
+      <div class="header__item">
+        <div class="header__menu menu">
+          <nav class="menu__body" id="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="index.html" id="home" class="menu__link">Головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="about.html" class="menu__link">Про нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="services.html" class="menu__link">Послуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="price.html" id="price"  class="menu__link">Ціни</a>
+              </li>
+              <li class="menu__item">
+                <a href="psychology.html" class="menu__link">Психологам</a>
+              </li>
+              <li class="menu__item">
+                <a href="seminars.html" class="menu__link">Семінари</a>
+              </li>
+              <li class="menu__item">
+                <a href="reviews.html" class="menu__link">Відгуки</a>
+              </li>
+              <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакти</a>
+              </li>
+              <li class="menu__item">
+                <a href="pay.html" class="menu__link link__pay">Оплата</a>
+                <span class="menu__link-icon">
+                  <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39.191 18.9967H36.321V12.1691C36.321 12.1378 36.3177 12.1072 36.3159 12.0763V6.81855C36.3159 6.46103 36.0026 6.17124 35.6161 6.17124H28.1961L21.7813 0.237445C21.65 0.116085 21.472 0.0478821 21.2864 0.0478821C21.1008 0.0478821 20.9228 0.116065 20.7915 0.237445L15.9545 4.71171L13.6806 2.60828C13.4072 2.35551 12.9642 2.35551 12.6908 2.60828L8.83447 6.17539C8.80901 6.17278 8.78312 6.17124 8.75688 6.17124H0.809053C0.422542 6.17124 0.109253 6.46103 0.109253 6.81855V13.7079C0.109253 13.729 0.11052 13.7499 0.112675 13.7705V35.1951C0.112675 36.1639 0.964786 36.9521 2.01214 36.9521H34.4215C35.4689 36.9521 36.321 36.1639 36.321 35.1951V28.3675H39.191C39.5775 28.3675 39.8908 28.0777 39.8908 27.7202V19.644C39.8908 19.2865 39.5775 18.9967 39.191 18.9967ZM34.9163 7.46589V10.4746C34.7583 10.4351 34.5928 10.4121 34.4215 10.4121H32.7807L29.5956 7.46589H34.9163ZM21.2864 1.61064L30.8013 10.4121H28.6773L20.2244 2.59301L21.2864 1.61064ZM19.2346 3.50855L26.6978 10.4121H22.1171L16.9443 5.62715L19.2346 3.50855ZM13.1857 3.98147L14.9648 5.62713L15.9545 6.54257L20.1377 10.4121H18.2302L12.232 4.86368L13.1857 3.98147ZM16.2507 10.4121H6.23374L11.2422 5.77922L16.2507 10.4121ZM4.2543 10.4121H2.01214C1.83767 10.4121 1.66948 10.4357 1.50888 10.4766V7.46589H7.43936L4.2543 10.4121ZM34.9214 35.1951C34.9214 35.45 34.6971 35.6575 34.4215 35.6575H2.01214C1.73654 35.6575 1.5123 35.45 1.5123 35.1951V12.1691C1.5123 11.9142 1.73654 11.7067 2.01214 11.7067H34.4215C34.68 11.7067 34.8907 11.8898 34.9163 12.1226V13.7079C34.9163 13.7333 34.9184 13.7583 34.9214 13.783V18.9967H28.5607C25.7677 18.9967 23.4954 21.0986 23.4954 23.6821C23.4954 26.2656 25.7677 28.3676 28.5607 28.3676H34.9214V35.1951H34.9214ZM38.4912 27.0729H36.321H34.9214H28.5607C26.5395 27.0729 24.895 25.5518 24.895 23.682C24.895 21.8124 26.5395 20.2914 28.5607 20.2914H34.9214H36.321H38.4912V27.0729Z" fill="#536779"/>
+                    <path d="M28.5939 21.4627C27.271 21.4627 26.1946 22.4583 26.1946 23.6821C26.1946 24.9058 27.271 25.9015 28.5939 25.9015C29.9169 25.9015 30.9933 24.9058 30.9933 23.6821C30.9932 22.4583 29.9169 21.4627 28.5939 21.4627ZM28.5939 24.6068C28.0427 24.6068 27.5942 24.1919 27.5942 23.6821C27.5942 23.1722 28.0427 22.7573 28.5939 22.7573C29.1451 22.7573 29.5936 23.1722 29.5936 23.6821C29.5936 24.1919 29.1451 24.6068 28.5939 24.6068Z" fill="#536779"/>
+                    </svg>
+                    
+                </span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+     
+      <div class="effect">
+        <div class="menu__icon">
+          <span class="span"></span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </header>
+  
+
+    <!-- Main Page -->
+    <main class="main page-seminars-main">
+
+              <!-- buy -->
+    <section class="section__buy">
+    <div class="buy__container">
+        <div class="buy__items">
+            <div class="buy__row">
+                <div class="buy__item content">
+                   <div class="content__lection">ЛЕКЦІЯ/ДІТИ</div> 
+                   <h3 class="content__title">ЯК ВИРОСТИТИ СИНА, АБИ ВІН СТАВ КРУТИМ, ЯК ІЛОН МАСК</h3>
+                   <div class="content__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                   <div class="content__boxPrice">
+                    <div class="content__text">Ціна: </div>
+                    <div class="content__price">200 ₴</div>
+                   </div>
+                   <div class="content__button">
+                    <a href="#" class="content__btn global-orange-btn">ПРИДБАТИ</a>
+                   </div>
+                </div>
+                <div class="buy__item"><img src="img/buy/image01.png" class="buy__image" alt="image"></div>
+            </div>
+            <div class="buy__row row-reverse">
+                <div class="buy__item content">
+                   <div class="content__lection">ЛЕКЦІЯ</div> 
+                   <h3 class="content__title">ЯК ПОЗБУТИСЯ СИНДРОМУ ФАНТОМНОЇ СИРЕНИ</h3>
+                   <div class="content__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                   <div class="content__boxPrice">
+                    <div class="content__text">Ціна: </div>
+                    <div class="content__price">200 ₴</div>
+                   </div>
+                   <div class="content__button">
+                    <a href="#" class="content__btn global-orange-btn">ПРИДБАТИ</a>
+                   </div>
+                </div>
+                <div class="buy__item"><img src="img/buy/image02.png" class="buy__image image-reverse" alt="image"></div>
+            </div>
+            <div class="buy__row">
+                <div class="buy__item content">
+                   <div class="content__lection">ЛЕКЦІЯ/ДІТИ</div> 
+                   <h3 class="content__title">ЯК ВИРОСТИТИ СИНА, АБИ ВІН СТАВ КРУТИМ, ЯК ІЛОН МАСК</h3>
+                   <div class="content__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                   <div class="content__boxPrice">
+                    <div class="content__text">Ціна: </div>
+                    <div class="content__price">200 ₴</div>
+                   </div>
+                   <div class="content__button">
+                    <a href="#" class="content__btn global-orange-btn">ПРИДБАТИ</a>
+                   </div>
+                </div>
+                <div class="buy__item"><img src="img/buy/image01.png" class="buy__image" alt="image"></div>
+            </div>
+            <div class="buy__row row-reverse">
+                <div class="buy__item content">
+                   <div class="content__lection">ЛЕКЦІЯ</div> 
+                   <h3 class="content__title">ЯК ПОЗБУТИСЯ СИНДРОМУ ФАНТОМНОЇ СИРЕНИ</h3>
+                   <div class="content__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                   <div class="content__boxPrice">
+                    <div class="content__text">Ціна: </div>
+                    <div class="content__price">200 ₴</div>
+                   </div>
+                   <div class="content__button">
+                    <a href="#" class="content__btn global-orange-btn">ПРИДБАТИ</a>
+                   </div>
+                </div>
+                <div class="buy__item"><img src="img/buy/image02.png" class="buy__image image-reverse" alt="image"></div>
+            </div>
+        </div>
+    </div>
+</section>  
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer__container">     
+    <div class="footer__row">
+        <div class="footer__column">
+            <img src="img/footer/Logo.svg" alt="logo" class="footer__logo">
+            <div class="footer__contacts contacts-footer">
+             <a href="tel:+380631855165" class="contacts-footer__item">
+                <span class="contacts-footer__icon"><svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.231445" width="40" height="40" rx="5" fill="#D3DDE6"/>
+                    <path d="M23.7333 21.6527C22.6667 22.7041 22.6667 23.7555 21.6 23.7555C20.5333 23.7555 19.4667 22.7041 18.4 21.6527C17.3333 20.6014 16.2667 19.55 16.2667 18.4986C16.2667 17.4473 17.3333 17.4473 18.4 16.3959C19.4667 15.3445 16.2667 12.1904 15.2 12.1904C14.1333 12.1904 12 15.3445 12 15.3445C12 17.4473 14.192 21.7106 16.2667 23.7555C18.3413 25.8004 22.6667 27.9609 24.8 27.9609C24.8 27.9609 28 25.8582 28 24.8068C28 23.7555 24.8 20.6014 23.7333 21.6527Z" fill="white"/>
+                    </svg>
+                    </span>
+                <span class="contacts-footer__text">+38 (063) <span>185-51-65</span></span>
+                <a href="mailto:olegmama@gmail.com" class="contacts-footer__item">
+                    <span class="contacts-footer__icon"><svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.231445" width="40" height="40" rx="5" fill="#D3DDE6"/>
+                        <path d="M27.7778 13.2393H12.2222C10.9949 13.2393 10 14.2479 10 15.4922V26.7568C10 28.0011 10.9949 29.0098 12.2222 29.0098H27.7778C29.0051 29.0098 30 28.0011 30 26.7568V15.4922C30 14.2479 29.0051 13.2393 27.7778 13.2393Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 16.1973L20 22.1113L30 16.1973" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span>
+                    <span class="contacts-footer__text">olegmama@gmail.com</span>
+                 </a>
+                 <a href="https://goo.gl/maps/s6pUmAz3RoYJ4RNH8" class="contacts-footer__item">
+                    <span class="contacts-footer__icon"><svg width="37" height="48" viewBox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="location-icon" d="M36.8132 18.7475C36.8132 8.81348 28.8132 0.813477 18.8791 0.813477C8.94507 0.813477 0.945068 8.81348 0.945068 18.7475C0.945068 28.6816 18.8791 47.2311 18.8791 47.2311C18.8791 47.2311 36.8132 28.6816 36.8132 18.7475ZM10.5275 18.3959C10.5275 13.8245 14.3077 10.0442 18.8791 10.0442C23.4506 10.0442 27.2308 13.7366 27.2308 18.3959C27.2308 22.9673 23.5385 26.7475 18.8791 26.7475C14.3077 26.7475 10.5275 22.9673 10.5275 18.3959Z" fill="#D3DDE6"/>
+                        </svg>
+                        </span>
+                    <span class="contacts-footer__text">вул.Дорошенка</span>
+                 </a>
+             </a>
+            </div>
+        </div>
+        <div class="footer__body">
+        <div class="footer__column">
+            <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                    <li class="menu-footer__item"><a href="#" class="menu-footer__link">Психологам</a></li>
+                    <li class="menu-footer__item"><a href="#" class="menu-footer__link">Семінари</a></li>
+                    <li class="menu-footer__item"><a href="#" class="menu-footer__link">Відгуки</a></li>
+                    <li class="menu-footer__item"><a href="#" class="menu-footer__link">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__column">
+            <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                    <li class="menu-footer__item"><a href="#" class="menu-footer__link">Головна</a></li>
+                    <li class="menu-footer__item"><a href="#" class="menu-footer__link">Про нас</a></li>
+                    <li class="menu-footer__item"><a href="#" class="menu-footer__link">Послуги</a></li>
+                    <li class="menu-footer__item"><a href="#" class="menu-footer__link">Ціни</a></li>
+                    <li class="menu-footer__item"><a href="#" class="menu-footer__link link__pay">Оплата</a>
+                    <span class="menu-footer__icon">
+                        <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M39.191 18.9967H36.321V12.1691C36.321 12.1378 36.3177 12.1072 36.3159 12.0763V6.81855C36.3159 6.46103 36.0026 6.17124 35.6161 6.17124H28.1961L21.7813 0.237445C21.65 0.116085 21.472 0.0478821 21.2864 0.0478821C21.1008 0.0478821 20.9228 0.116065 20.7915 0.237445L15.9545 4.71171L13.6806 2.60828C13.4072 2.35551 12.9642 2.35551 12.6908 2.60828L8.83447 6.17539C8.80901 6.17278 8.78312 6.17124 8.75688 6.17124H0.809053C0.422542 6.17124 0.109253 6.46103 0.109253 6.81855V13.7079C0.109253 13.729 0.11052 13.7499 0.112675 13.7705V35.1951C0.112675 36.1639 0.964786 36.9521 2.01214 36.9521H34.4215C35.4689 36.9521 36.321 36.1639 36.321 35.1951V28.3675H39.191C39.5775 28.3675 39.8908 28.0777 39.8908 27.7202V19.644C39.8908 19.2865 39.5775 18.9967 39.191 18.9967ZM34.9163 7.46589V10.4746C34.7583 10.4351 34.5928 10.4121 34.4215 10.4121H32.7807L29.5956 7.46589H34.9163ZM21.2864 1.61064L30.8013 10.4121H28.6773L20.2244 2.59301L21.2864 1.61064ZM19.2346 3.50855L26.6978 10.4121H22.1171L16.9443 5.62715L19.2346 3.50855ZM13.1857 3.98147L14.9648 5.62713L15.9545 6.54257L20.1377 10.4121H18.2302L12.232 4.86368L13.1857 3.98147ZM16.2507 10.4121H6.23374L11.2422 5.77922L16.2507 10.4121ZM4.2543 10.4121H2.01214C1.83767 10.4121 1.66948 10.4357 1.50888 10.4766V7.46589H7.43936L4.2543 10.4121ZM34.9214 35.1951C34.9214 35.45 34.6971 35.6575 34.4215 35.6575H2.01214C1.73654 35.6575 1.5123 35.45 1.5123 35.1951V12.1691C1.5123 11.9142 1.73654 11.7067 2.01214 11.7067H34.4215C34.68 11.7067 34.8907 11.8898 34.9163 12.1226V13.7079C34.9163 13.7333 34.9184 13.7583 34.9214 13.783V18.9967H28.5607C25.7677 18.9967 23.4954 21.0986 23.4954 23.6821C23.4954 26.2656 25.7677 28.3676 28.5607 28.3676H34.9214V35.1951H34.9214ZM38.4912 27.0729H36.321H34.9214H28.5607C26.5395 27.0729 24.895 25.5518 24.895 23.682C24.895 21.8124 26.5395 20.2914 28.5607 20.2914H34.9214H36.321H38.4912V27.0729Z" fill="#536779"/>
+                            <path d="M28.5939 21.4627C27.271 21.4627 26.1946 22.4583 26.1946 23.6821C26.1946 24.9058 27.271 25.9015 28.5939 25.9015C29.9169 25.9015 30.9933 24.9058 30.9933 23.6821C30.9932 22.4583 29.9169 21.4627 28.5939 21.4627ZM28.5939 24.6068C28.0427 24.6068 27.5942 24.1919 27.5942 23.6821C27.5942 23.1722 28.0427 22.7573 28.5939 22.7573C29.1451 22.7573 29.5936 23.1722 29.5936 23.6821C29.5936 24.1919 29.1451 24.6068 28.5939 24.6068Z" fill="#536779"/>
+                            </svg>
+                              </span></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__column">
+            <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                    <li class="menu-footer__item "><a href="#" class="menu-footer__link link-specialists">Сімейний психотерапевт</a></li>
+                    <li class="menu-footer__item "><a href="#" class="menu-footer__link link-specialists">Дитячий психотерапевт</a></li>
+                    <li class="menu-footer__item "><a href="#" class="menu-footer__link link-specialists">Індивідуальні заняття</a></li>
+
+                </ul>
+                <div class="footer__social social">
+                  <a href="#" class="social__item"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="5" fill="#D3DDE6"/>
+                    <path d="M20 11.8072C22.6506 11.8072 23.0121 11.8072 24.0964 11.8072C25.0602 11.8072 25.5422 12.0482 25.9036 12.1687C26.3855 12.4096 26.747 12.5301 27.1084 12.8916C27.4699 13.253 27.7108 13.6145 27.8313 14.0964C27.9518 14.4578 28.0723 14.9398 28.1928 15.9036C28.1928 16.988 28.1928 17.2289 28.1928 20C28.1928 22.7711 28.1928 23.0121 28.1928 24.0964C28.1928 25.0602 27.9518 25.5422 27.8313 25.9036C27.5904 26.3855 27.4699 26.747 27.1084 27.1084C26.747 27.4699 26.3855 27.7108 25.9036 27.8313C25.5422 27.9518 25.0602 28.0723 24.0964 28.1928C23.0121 28.1928 22.7711 28.1928 20 28.1928C17.2289 28.1928 16.988 28.1928 15.9036 28.1928C14.9398 28.1928 14.4578 27.9518 14.0964 27.8313C13.6145 27.5904 13.253 27.4699 12.8916 27.1084C12.5301 26.747 12.2892 26.3855 12.1687 25.9036C12.0482 25.5422 11.9277 25.0602 11.8072 24.0964C11.8072 23.0121 11.8072 22.7711 11.8072 20C11.8072 17.2289 11.8072 16.988 11.8072 15.9036C11.8072 14.9398 12.0482 14.4578 12.1687 14.0964C12.4096 13.6145 12.5301 13.253 12.8916 12.8916C13.253 12.5301 13.6145 12.2892 14.0964 12.1687C14.4578 12.0482 14.9398 11.9277 15.9036 11.8072C16.988 11.8072 17.3494 11.8072 20 11.8072ZM20 10C17.2289 10 16.988 10 15.9036 10C14.8193 10 14.0964 10.241 13.494 10.4819C12.8916 10.7229 12.2892 11.0843 11.6867 11.6867C11.0843 12.2892 10.8434 12.7711 10.4819 13.494C10.241 14.0964 10.1205 14.8193 10 15.9036C10 16.988 10 17.3494 10 20C10 22.7711 10 23.0121 10 24.0964C10 25.1807 10.241 25.9036 10.4819 26.506C10.7229 27.1084 11.0843 27.7108 11.6867 28.3133C12.2892 28.9157 12.7711 29.1566 13.494 29.5181C14.0964 29.759 14.8193 29.8795 15.9036 30C16.988 30 17.3494 30 20 30C22.6506 30 23.0121 30 24.0964 30C25.1807 30 25.9036 29.759 26.506 29.5181C27.1084 29.2771 27.7108 28.9157 28.3133 28.3133C28.9157 27.7108 29.1566 27.2289 29.5181 26.506C29.759 25.9036 29.8795 25.1807 30 24.0964C30 23.0121 30 22.6506 30 20C30 17.3494 30 16.988 30 15.9036C30 14.8193 29.759 14.0964 29.5181 13.494C29.2771 12.8916 28.9157 12.2892 28.3133 11.6867C27.7108 11.0843 27.2289 10.8434 26.506 10.4819C25.9036 10.241 25.1807 10.1205 24.0964 10C23.0121 10 22.7711 10 20 10Z" fill="white"/>
+                    <path d="M20 14.8193C17.1084 14.8193 14.8193 17.1084 14.8193 20C14.8193 22.8916 17.1084 25.1807 20 25.1807C22.8916 25.1807 25.1807 22.8916 25.1807 20C25.1807 17.1084 22.8916 14.8193 20 14.8193ZM20 23.3735C18.1928 23.3735 16.6265 21.9277 16.6265 20C16.6265 18.1928 18.0723 16.6265 20 16.6265C21.8072 16.6265 23.3735 18.0723 23.3735 20C23.3735 21.8072 21.8072 23.3735 20 23.3735Z" fill="white"/>
+                    <path d="M25.3012 15.9036C25.9666 15.9036 26.506 15.3642 26.506 14.6988C26.506 14.0334 25.9666 13.494 25.3012 13.494C24.6358 13.494 24.0964 14.0334 24.0964 14.6988C24.0964 15.3642 24.6358 15.9036 25.3012 15.9036Z" fill="white"/>
+                    </svg>
+                    </a>
+                  <a href="https://t.me/Ponidevito" class="social__item"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="5" fill="#D3DDE6"/>
+                    <path d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z" fill="#FEFEFE"/>
+                    </svg>
+                    </a> 
+                  <a href="viber://add?number=+380631855165" class="social__item"><svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="viber" d="M0.5 5.09473C0.5 2.3333 2.73858 0.0947266 5.5 0.0947266H35.5C38.2614 0.0947266 40.5 2.3333 40.5 5.09473V34.5215C40.5 37.2829 38.2614 39.5215 35.5 39.5215H5.5C2.73858 39.5215 0.5 37.2829 0.5 34.5215V5.09473Z" fill="#D3DDE6"/>
+                    <path d="M27.2539 9.50391C23.4424 8.78646 19.4843 8.78646 15.6728 9.50391C13.9869 9.86264 11.8613 11.8715 11.4948 13.4499C10.8351 16.535 10.8351 19.6918 11.4948 22.7768C11.9346 24.3552 14.0602 26.3641 15.6728 26.7228C15.7461 26.7228 15.8194 26.7945 15.8194 26.8663V31.3862C15.8194 31.6015 16.1126 31.745 16.2592 31.5297L18.4581 29.3056C18.4581 29.3056 20.2173 27.512 20.5105 27.225C20.5105 27.225 20.5838 27.1533 20.6571 27.1533C22.856 27.225 25.1283 27.0098 27.3272 26.6511C29.0131 26.2923 31.1387 24.2835 31.5052 22.7051C32.1649 19.62 32.1649 16.4632 31.5052 13.3782C31.0654 11.8715 28.9398 9.86264 27.2539 9.50391ZM27.3272 22.992C26.9607 23.7095 26.5209 24.2835 25.788 24.6422C25.5681 24.7139 25.3482 24.7857 25.1283 24.8574C24.8351 24.7857 24.6152 24.7139 24.3953 24.6422C22.0497 23.7095 19.8508 22.4181 18.0916 20.5527C17.1387 19.4765 16.3325 18.2568 15.6728 16.9654C15.3796 16.3197 15.0864 15.7458 14.8665 15.1C14.6466 14.5261 15.0131 13.9521 15.3796 13.5217C15.7461 13.0912 16.1859 12.8042 16.699 12.589C17.0654 12.3737 17.4319 12.5172 17.7251 12.8042C18.3115 13.5217 18.8979 14.2391 19.3377 15.0283C19.6309 15.5305 19.5576 16.1045 19.0445 16.4632C18.8979 16.535 18.8246 16.6067 18.678 16.7502C18.6047 16.8219 18.4581 16.8937 18.3848 17.0372C18.2382 17.2524 18.2382 17.4676 18.3115 17.6829C18.8979 19.333 19.9974 20.6244 21.6832 21.3419C21.9764 21.4854 22.1963 21.5571 22.5628 21.5571C23.0759 21.4854 23.2958 20.9114 23.6623 20.6244C24.0288 20.3375 24.4686 20.3375 24.9084 20.5527C25.2749 20.7679 25.6414 21.0549 26.0811 21.3419C26.4476 21.6289 26.8141 21.8441 27.1806 22.1311C27.4005 22.2746 27.4738 22.6333 27.3272 22.992ZM24.2487 17.6111C24.1021 17.6111 24.1754 17.6111 24.2487 17.6111C23.9555 17.6111 23.8822 17.4676 23.8089 17.2524C23.8089 17.1089 23.8089 16.8937 23.7356 16.7502C23.6623 16.4632 23.5157 16.1762 23.2225 15.961C23.0759 15.8892 22.9293 15.8175 22.7827 15.7458C22.5628 15.674 22.4162 15.674 22.1963 15.674C21.9764 15.6023 21.9031 15.4588 21.9031 15.2435C21.9031 15.1 22.123 14.9566 22.2696 14.9566C23.4424 15.0283 24.322 15.674 24.4686 17.0372C24.4686 17.1089 24.4686 17.2524 24.4686 17.3242C24.4686 17.4676 24.3953 17.6111 24.2487 17.6111ZM23.5157 14.4543C23.1492 14.3108 22.7827 14.1674 22.3429 14.0956C22.1963 14.0956 21.9764 14.0239 21.8298 14.0239C21.6099 14.0239 21.4634 13.8804 21.5366 13.6651C21.5366 13.4499 21.6832 13.3064 21.9031 13.3782C22.6361 13.4499 23.2958 13.5934 23.9555 13.8804C25.2749 14.5261 26.0079 15.6023 26.2277 17.0372C26.2277 17.1089 26.2277 17.1807 26.2277 17.2524C26.2277 17.3959 26.2277 17.5394 26.2277 17.7546C26.2277 17.8264 26.2277 17.8981 26.2277 17.9699C26.1545 18.2568 25.6414 18.3286 25.5681 17.9699C25.5681 17.8981 25.4948 17.7546 25.4948 17.6829C25.4948 17.0372 25.3482 16.3915 25.055 15.8175C24.6152 15.1718 24.1021 14.7413 23.5157 14.4543ZM27.4738 18.7591C27.2539 18.7591 27.1073 18.5438 27.1073 18.3286C27.1073 17.8981 27.034 17.4676 26.9607 17.0372C26.6675 14.7413 24.7618 12.8759 22.4895 12.5172C22.123 12.4455 21.7565 12.4455 21.4634 12.3737C21.2435 12.3737 20.9503 12.3737 20.877 12.0867C20.8037 11.8715 21.0236 11.6563 21.2435 11.6563C21.3168 11.6563 21.3901 11.6563 21.3901 11.6563C24.3953 11.728 21.5367 11.6563 21.3901 11.6563C24.4686 11.728 27.034 13.7369 27.5471 16.7502C27.6204 17.2524 27.6937 17.7546 27.6937 18.3286C27.8403 18.5438 27.6937 18.7591 27.4738 18.7591Z" fill="white"/>
+                    </svg>
+                    </a>   
+                </div>
+            </nav>
+        </div>
+    </div>
+    </div>
+    <div class="footer__button">
+        <a href="#" class="global-blue-btn footer-btn  modal-button-footer">Вам передзвонити?</a>
+    </div>
+    </div>
+</footer>
+
+
+    </div>
+
+
+    
+    <script src="./js/scripts.min.js"></script>
+</body>
+</html>
