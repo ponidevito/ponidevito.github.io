@@ -13,12 +13,10 @@
 <body>
     <div class="wrapper">
  <!-- scroll up -->
-<button id="topBtn" onclick="topFunction()">
-    <div class="topBox">
-            <svg width="24" height="45" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.0607 0.93934C12.4749 0.353553 11.5251 0.353553 10.9393 0.93934L1.3934 10.4853C0.80761 11.0711 0.80761 12.0208 1.3934 12.6066C1.97918 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.93934ZM13.5 45L13.5 2L10.5 2L10.5 45L13.5 45Z" fill="white"/>
-            </svg>            
-    </div>
+ <button id="topBtn" class="topBox" onclick="topFunction()">
+    <svg width="24" height="45" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.0607 0.93934C12.4749 0.353553 11.5251 0.353553 10.9393 0.93934L1.3934 10.4853C0.80761 11.0711 0.80761 12.0208 1.3934 12.6066C1.97918 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.93934ZM13.5 45L13.5 2L10.5 2L10.5 45L13.5 45Z" fill="white"/>
+    </svg>            
 </button>
         <!-- Header -->
     
@@ -34,7 +32,7 @@
                 <input type="text" class="form__input " placeholder="Марія" >
                 <label for="tel" class="form__label">
                 <input class="form__input tel" name="tel" id="tel" type="tel" placeholder="+ 38 (000) 000-00-00" required>
-                <p class="form__verif">Введіть номер телефона</p>
+                <div class="form__verif">Введіть номер телефона</div>
               </label>
                 <input type="text" class="form__input " placeholder="Що вас турбує?" >
               </form>
@@ -219,6 +217,7 @@
                     </svg>
                     </span>
                 <span class="contacts-footer__text">+38 (063) <span>185-51-65</span></span>
+             </a>
                 <a href="mailto:olegmama@gmail.com" class="contacts-footer__item">
                     <span class="contacts-footer__icon"><svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.231445" width="40" height="40" rx="5" fill="#D3DDE6"/>
