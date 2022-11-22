@@ -405,6 +405,8 @@ table {
   position: relative;
   padding-bottom: 250px;
   overflow: hidden;
+      position: relative;
+    max-width: 1400px;
 }
 
 .header__wrapper .headerMain__image {
