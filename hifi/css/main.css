@@ -691,11 +691,13 @@ table {
 .weare {
   padding: 220px 0px 170px 0px;
   position: relative;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .weare__image {
   position: absolute;
-  right: 0;
+  right: -50%;
   top: -60px;
   bottom: 0;
   z-index: -1;
@@ -774,11 +776,13 @@ table {
   padding: 60px 0px;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .why__image {
   position: absolute;
-  right: 0;
+  right: -20%;
   top: 0px;
   bottom: 0;
 }
@@ -1163,10 +1167,6 @@ main {
 }
 
 @media (max-width: 1420px) {
-  .weare__image img {
-    max-width: 700px;
-  }
-
   .weare .top {
     padding: 100px 0px;
   }
@@ -1177,10 +1177,6 @@ main {
 }
 
 @media (max-width: 1350px) {
-  .why__image img {
-    max-width: 600px;
-  }
-
   .newsletter .top {
     padding: 150px 0px 150px 0px;
   }
@@ -1194,6 +1190,12 @@ main {
   .offers__items {
     grid-template-columns: repeat(3, 0fr);
     justify-content: center;
+  }
+}
+
+@media (max-width: 1320px) {
+  .why__image img {
+    max-width: 700px;
   }
 }
 
@@ -1231,12 +1233,17 @@ main {
 }
 
 @media (max-width: 1200px) {
-  .what__items {
-    gap: 40px;
+  .weare__image {
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  .why__image img {
-    max-width: 350px;
+  .weare__image img {
+    max-width: 700px;
+  }
+
+  .what__items {
+    gap: 40px;
   }
 
   .why .top__title {
@@ -1451,6 +1458,10 @@ main {
 
   .what__items {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why__image img {
+    max-width: 500px;
   }
 
   .atlas__icon {
