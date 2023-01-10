@@ -63,9 +63,9 @@ const langArr = {
   },
 
   'about-text': {
-    en: "Hello! My name is Oleg. I am 31 years old. I am punctual and responsible for my work, I am ready to learn something new and develop in this area in your team!",
-    es: "Hola! Mi nombre es Oleh ! Tengo 31 años. Soy puntual y responsable de mi trabajo.¡Estoy listo para aprender algo nuevo y desarrollarme en este campo en su equipo!",
-    ua: "Привіт! Мене звати Олег! Мені 31 рік. Я пунктуальний та відповідально ставлюся до своєї роботи. Я готовий навчатися чомусь новому та розвиватись у цій сфері у вашій команді!",
+    en: "Hello! My name is Oleg. I am 32 years old. I am punctual and responsible for my work, I am ready to learn something new and develop in this area in your team!",
+    es: "Hola! Mi nombre es Oleh ! Tengo 32 años. Soy puntual y responsable de mi trabajo.¡Estoy listo para aprender algo nuevo y desarrollarme en este campo en su equipo!",
+    ua: "Привіт! Мене звати Олег! Мені 32 роки. Я пунктуальний та відповідально ставлюся до своєї роботи. Я готовий навчатися чомусь новому та розвиватись у цій сфері у вашій команді!",
   },
    /*   about       */
 
@@ -92,52 +92,37 @@ const langArr = {
 
 };
 
+// Аккордеон
+function accordion() {
+    const items = document.querySelectorAll('.accordion__item-trigger')
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentNode
+            if (parent.classList.contains('accordion__item-active')) {
+                parent.classList.remove('accordion__item-active')
+            } else {
+                document
+                    .querySelectorAll('.accordion__item')
+                    .forEach(child => child.classList.remove('accordion__item-active'))   
+                parent.classList.add('accordion__item-active')
+            }
+        })
+    })
+}
+accordion() 
 // Custom scripts
 let acc = document.getElementsByClassName("accordion");
-let content = document.getElementsByClassName('accordion__content');
+let content = document.getElementsByClassName("accordion__content");
 let i;
 let panel;
-
-// accordion
-function accordion() {
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      panel = this.firstElementChild.lastElementChild;
-
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
-  }
-}
-
-accordion();
-
-function toggle() {
-  let _loop = function _loop(a) {
-    acc[a].addEventListener('click', function () {
-      content[a].classList.toggle("active");
-    });
-  };
-
-  for (let a = 0; a < acc.length; a++) {
-    _loop(a);
-  }
-}
-
-toggle();
 
 
 // select lenguage
 
-
 let selectHeader = document.querySelector(".select__header");
 let selectItem = document.querySelectorAll(".select__item");
 let selectBody = document.querySelector(".select__body");
-let html=document.querySelector("html")
+let html = document.querySelector("html");
 
 const allLang = ["en", "es", "ua"];
 
@@ -153,29 +138,30 @@ let select = function () {
     event.stopPropagation();
   }
 
-
-
   function selectChoose() {
-    
     let text = this.innerText,
       select = this.closest(".select"),
       currentText = select.querySelector(".select__current");
     currentText.innerText = text;
     let lang = this.innerText;
     location.href = window.location.pathname + "#" + lang.toLowerCase();
-    localStorage.setItem('place1', lang);
+    localStorage.setItem("place1", lang);
     selectBody.classList.remove("opacity");
     location.reload();
-    
-    if(localStorage.getItem('place1')){ 
-      lang = localStorage.getItem('place1');
+
+    if (localStorage.getItem("place1")) {
+      lang = localStorage.getItem("place1");
     }
   }
 };
 
 select();
 
-window.addEventListener("load",function(){ if(localStorage.getItem('place1'))  document.querySelector('.select__current').innerHTML=localStorage.getItem('place1')})
+window.addEventListener("load", function () {
+  if (localStorage.getItem("place1"))
+    document.querySelector(".select__current").innerHTML =
+      localStorage.getItem("place1");
+});
 
 function changeLanguage() {
   let hash = window.location.hash;
@@ -195,11 +181,12 @@ function changeLanguage() {
 }
 changeLanguage();
 
-html.addEventListener('click', function(e) {
-  if(e.target.tagName !== 'HTML' || e.target.tagName !== 'BODY'){
-      selectBody.classList.remove('opacity');
+
+
+html.addEventListener("click", function (e) {
+  if (e.target.tagName !== "HTML" || e.target.tagName !== "BODY") {
+    selectBody.classList.remove("opacity");
+    
   }
 });
-
-
 
