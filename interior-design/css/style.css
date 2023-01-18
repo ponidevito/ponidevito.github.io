@@ -892,7 +892,6 @@ input[type=search]::-webkit-search-results-decoration {
   background-position: center;
   background-size: cover;
   background-color: rgba(14, 14, 14, 0.39);
-  height: 100vh;
 }
 
 .clients__category {
