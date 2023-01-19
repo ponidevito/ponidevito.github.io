@@ -171,6 +171,10 @@ h6 {
   padding: 0px 0px 0px 15px;
 }
 
+.header__about {
+  z-index: 1;
+}
+
 .header__lenguage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,6 +419,7 @@ h6 {
 
 .section__accordion .accordion .accordion__item.accordion__item-active .accordion__item-content {
   display: block;
+  background-color: rgba(233, 243, 211, 0.38);
 }
 
 .section__accordion .accordion .accordion__item.accordion__item-active .line2 {
@@ -433,16 +438,21 @@ h6 {
   transition: 0.2s all ease;
 }
 
+.section__accordion .accordion .accordion__item.accordion__item-active .accordion__item-trigger {
+  background-color: rgba(233, 243, 211, 0.38);
+}
+
 .section__accordion .accordion .accordion__item .accordion__item-trigger {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 0;
+  padding: 20px 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
   gap: 20px;
+  border-radius: 5px;
 }
 
 .section__accordion .accordion .accordion__item .accordion__item-trigger .trigger__num {
@@ -504,6 +514,11 @@ h6 {
   margin-top: 0;
 }
 
+.section__accordion .accordion .accordion__item .accordion__item-content .content__text.lng-about-text {
+  padding: 0px 20px;
+  line-height: 1.2;
+}
+
 .section__accordion .accordion .accordion__item .accordion__item-content .content__text-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,6 +527,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 10px 20px;
 }
 
 .section__accordion .accordion .accordion__item .accordion__item-content .content__text-list li {
