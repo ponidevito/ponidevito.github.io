@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=regular,500,600,700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="main__body">
+    <!-- Header -->
+    <header>
+    <!-- Navbar -->
+    <div class="header fixed">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"> <a href="index.html"><img src="./img/header/logo.svg" alt="logo"></a></div>
+                
+                    <nav>
+                        <ul class="menu">
+                            <li class="menu__item"><a href="index.html" class="menu__item-link" data-scroll>Home</a></li>
+                            <li class="menu__item"><a href="about.html" class="menu__item-link" data-scroll>About Us</a></li>
+                            <li class="menu__item"><a href="services.html" class="menu__item-link" data-scroll>Services</a></li>
+                            <li class="menu__item"><a href="our-teams.html" class="menu__item-link" data-scroll>Our Teams</a></li>
+                            <li class="menu__item"><a href="portfolios.html" class="menu__item-link" data-scroll>Portfolio</a></li>
+                        </ul>
+                    </nav>
+
+                    <a href="contact.html" class="header__btn btn">Contact Us</a>
+
+                    <button class="burger">
+                        <span></span>
+                    </button>
+
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Main Page -->
+    <main class="main">
+        <!-- contact-us section -->
+        <section class="contact-us pb-110">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-header__title">Contact Us</h1>
+            <p class="page-header__undertitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </div>
+
+        <div class="contact-us__box">
+            <form class="contact-us__form form">
+                <div class="form__box">
+                    <label class="form__label" for="name">First Name
+                        <input type="text" name="name" id="name" class="form__input" placeholder="First Name" required>
+                    </label>
+                    <label class="form__label" for="last-name">Last Name
+                        <input type="text" name="last-name" id="last-name" class="form__input" placeholder="Last Name" required>
+                    </label>
+                </div>
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" name="email" id="email" placeholder="Email" required>
+
+                <label class="form__label" for="phone">Phone Number</label>
+                <div class="form__phone-group">
+                    <!-- Dropdown for country code -->
+                    <div class="custom-select">
+                        <select name="country-code" id="country-code" class="custom-select__native">
+                            <option value="+1">US</option>
+                            <option value="+44">UK</option>
+                            <option value="+33">FR</option>
+                            <option value="+38" selected>UA</option>
+                            <option value="+49">DE</option>
+                        </select>
+                        <div class="custom-select__display">
+                            <span class="custom-select__country">US</span>
+                            <span class="custom-select__arrow"><img src="./img/form/arrow-down.svg" alt="arrow down"></span>
+                        </div>
+                    </div>
+                    <!-- Input for phone number -->
+                    <input type="text" class="form__input phone__input" name="phone" id="phone" class="phone__input"  placeholder="Phone Number" required>
+                </div>
+                
+                <label class="form__label" for="message">Message</label>
+                <textarea name="message" class="form__input textarea" id="message" ></textarea>
+                <div class="form__actions">
+                    <button class="btn" type="submit">Send Massage</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+        <!-- location section -->
+        <section class="location pb-100">
+    <div class="container">
+        <div class="location__top">
+            <h5 class="location__line line-global"><span>Loaction</span></h5>
+        </div>
+
+        <div class="location__body">
+            <div class="location__item">
+                <div class="location__box">
+                    <div class="location__content">
+                        <h3 class="location__title">Visit Our Stores</h3>
+                        <p class="location__text">Find us at these locations.</p>
+                    </div>
+                    <div class="location__content">
+                        <label class="location__label">Email</label>
+                        <ul>
+                            <li><a href="mailto:dananz@gmail.com" class="location__link">dananz@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="location__content">
+                        <label class="location__label">Phone</label>
+                        <ul>
+                            <li>
+                                <a href="tel:+62 815 002 1000" class="location__link">+62 815 002 1000</a>
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="location__item last-item">
+                <div class="location__row">
+                    <div class="location__descriiption">
+                        <div class="location__name">Jakarta</div>
+                        <p class="location__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                    </div>
+                    <div class="location__descriiption">
+                        <div class="location__name">Surakarta</div>
+                        <p class="location__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                    </div>
+                    <div class="location__descriiption">
+                        <div class="location__name">Yogyakarta</div>
+                        <p class="location__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                    </div>
+                    <div class="location__descriiption">
+                        <div class="location__name">Bandung</div>
+                        <p class="location__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- blue section -->
+        <section class="blue-section">
+    <div class="container">
+        <div class="blue-section__body">
+            <div class="blue-section-item">
+                <h2 class="blue-section-item__title">let's discuss making your interior like a dream place!</h2>
+            </div>
+            <div class="blue-section-item">
+                <div class="blue-section-item__content">
+                    <div class="blue-section-item__text"><p>Contact us below to work together to build your amazing interior</p></div>
+                    <a href="contact.html" class="blue-section-item__btn btn btn-white">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__item">
+                <div class="footer__column">
+                    <div class="footer__logo"><a href="#"><img src="./img/header/logo.svg" alt=""></a></div>
+                    <h2 class="footer__title">One of the best furniture agency.</h2>
+                </div>
+            </div>
+            <div class="footer__item right-item">
+                <form class="footer__form">
+                    <label for="email" class="footer__label">Enter  your email to get the laterst news</label>
+                    <div class="footer__form-input-box">
+                        <input type="email" name="email" id="email" class="footer__form-input" placeholder="Email Adress">
+                    </div>
+                    <button class="footer__form-btn" type="submit"><img src="./img/footer/arrow.svg" class="footer__arrow" alt="arrow"></button>
+
+                </form>
+                <div class="footer__social social">
+                    <div class="social__box">
+                        <p class="social__text">Follow us On</p>
+                        <div class="social__box-item">
+                            <a href="#" class="social__item"><img src="./img/footer/face.svg" alt="icon"></a>
+                            <a href="#" class="social__item"><img src="./img/footer/instagram.svg" alt="icon"></a>
+                            <a href="#" class="social__item"><img src="./img/footer/tiktok.svg" alt="icon"></a>
+                            <a href="#" class="social__item"><img src="./img/footer/youtube.svg" alt="icon"></a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://unpkg.com/imask"></script>
+<script src="./js/scripts.min.js"></script>
+
+
+
+</html>
