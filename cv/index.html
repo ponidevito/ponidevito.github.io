@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+
+<body class="main__body">
+    <div class="wrapper">
+        <button id="topBtn" class="topBox" onclick="topFunction()">
+            <svg width="24" height="45" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0607 0.93934C12.4749 0.353553 11.5251 0.353553 10.9393 0.93934L1.3934 10.4853C0.80761 11.0711 0.80761 12.0208 1.3934 12.6066C1.97918 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.93934ZM13.5 45L13.5 2L10.5 2L10.5 45L13.5 45Z" fill="#000"></path>
+            </svg>            
+        </button>
+        <div id="hero" class="hero">
+            <!-- Header -->
+            <header>
+    <!-- Navbar -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#hero" class="menu__item-link" data-scroll>Home</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__item-link" data-scroll>About</a></li>
+                        <li class="menu__item"><a href="#skills" class="menu__item-link" data-scroll>Skills</a></li>
+                        <li class="menu__item"><a href="#projects" class="menu__item-link" data-scroll>Projects</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__item-link" data-scroll>Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button class="burger">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+            <section class="home">
+    <canvas></canvas>
+    <div class="container">
+        <div class="home__body">
+            <div class="home__item">
+                <div class="home__content">
+                    <h1 class="home__title">Hello, <br> I'm <span>Oleh</span> <br> Web Developer
+                    </h1>
+                    <div class="home__action">
+                        <a href="#contact" class="premium-btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="home__item">
+                <div class="home__picture">
+                    <img src="./img/photo.jpg" alt="photo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div>
+        <!-- Main Page -->
+        <main class="main">
+
+            <!-- About -->
+            <section class="about" id="about">
+    <div class="container">
+        <div class="top">
+            <h2  class="title">About</h2>
+        </div>
+        <div class="about__body">
+            <div class="about__item">
+                <div class="about__picture">
+                    <img src="./img/certificate.jpg" alt="certificate">
+                </div>
+            </div>
+            <div class="about__item">
+               <div class="about__content">
+                <h4 class="about__title">Hey there<span>!</span></h4>
+                <p class="about__undertitle">Hello! My name is Oleh, and I’m 34 years old, proudly hailing from the beautiful city of Lviv, Ukraine. I like to think of myself as punctual and responsible, always eager to learn and grow in my field. When I’m not coding or designing, you can usually find me exploring new places, or enjoying a good movie (yes, I’m a film buff!). I’m excited to join a team that values creativity and innovation, and I’m ready to tackle new challenges while bringing a touch of humor and enthusiasm to everything I do. Let’s make some great things happen together!</p>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- Skills -->
+            <section class="skills" id="skills">
+    <div class="container">
+        <div class="top">
+            <h2  class="title">Skills</h2>
+        </div>
+        <div class="skills__rows">
+            <div class="skills__column" data-progress="90">
+                <h4 class="skills__title">HTML</h4>
+                <img src="./img/skills/html-5.png" alt="HTML" class="logo">
+            <div class="progress__box">
+                <div class="progress-bar"></div>
+            </div>
+            <span>90%</span>
+            <div class="border-bottom"></div>
+            <div class="border-left"></div>
+            </div>
+            <div class="skills__column" data-progress="90">
+                <h4 class="skills__title">CSS</h4>
+                <img src="./img/skills/css-3.png" alt="css" class="logo">
+            <div class="progress__box">
+                <div class="progress-bar"></div>
+            </div>
+            <span>90%</span>
+            <div class="border-bottom"></div>
+            <div class="border-left"></div>
+            </div>
+            <div class="skills__column" data-progress="60">
+                <h4 class="skills__title">JS</h4>
+                <img src="./img/skills/js.png" alt="js" class="logo">
+            <div class="progress__box">
+                <div class="progress-bar"></div>
+            </div>
+            <span>60%</span>
+            <div class="border-bottom"></div>
+            <div class="border-left"></div>
+            </div>
+            <div class="skills__column" data-progress="30">
+                <h4 class="skills__title">ANGULAR</h4>
+                <img src="./img/skills/angular.png" alt="Angular" class="logo">
+            <div class="progress__box">
+                <div class="progress-bar"></div>
+            </div>
+            <span>30%</span>
+            <div class="border-bottom"></div>
+            <div class="border-left"></div>
+            </div>
+            <div class="skills__column" data-progress="40">
+                <h4 class="skills__title">GIT</h4>
+                <img src="./img/skills/git.svg" alt="Git" class="logo">
+            <div class="progress__box">
+                <div class="progress-bar"></div>
+            </div>
+            <span>40%</span>
+            <div class="border-bottom"></div>
+            <div class="border-left"></div>
+            </div>
+            <div class="skills__column" data-progress="30">
+                <h4 class="skills__title">FIGMA</h4>
+                <img src="./img/skills/figma.png" alt="Figma" class="logo">
+            <div class="progress__box">
+                <div class="progress-bar"></div>
+            </div>
+            <span>30%</span>
+            <div class="border-bottom"></div>
+            <div class="border-left"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- Projects -->
+            <section class="projects" id="projects">
+    <div class="container">
+        <div class="top">
+            <h2  class="title">Projects</h2>
+        </div>
+        <div class="projects__row">
+            <a href="https://sushimono-31f19.web.app/" target="_blank" class="projects__column">
+                <img src="./img/projects/monosushi.jpg" alt="poster">
+                <p class="projects__text">Monosushi</p>
+            </a>
+            <a href="https://tomat-211ec.web.app/" target="_blank" class="projects__column">
+                <img src="./img/projects/tomatina.jpg" alt="poster">
+                <p class="projects__text">Tomatina</p>
+            </a>
+            <a href="https://collection-films.org.ua/" target="_blank" class="projects__column">
+                <img src="./img/projects/collection-films.jpg" alt="poster">
+                <p class="projects__text">Collection Films</p>
+            </a>
+            <a href="https://ponidevito.github.io/dananz/" target="_blank" class="projects__column">
+                <img src="./img/projects/dananz.jpg" alt="poster">
+                <p class="projects__text">Dananz</p>
+            </a>
+            <a href="https://ponidevito.github.io/psychology/" target="_blank" class="projects__column">
+                <img src="./img/projects/psychology.jpg" alt="poster">
+                <p class="projects__text">Psychology</p>
+            </a>
+            <a href="https://ponidevito.github.io/hosting/" target="_blank" class="projects__column">
+                <img src="./img/projects/hosting.jpg" alt="poster">
+                <p class="projects__text">Hosting</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+            <!-- Contact -->
+            <section class="contact" id="contact">
+    <div class="container">
+        <div class="top">
+            <h2  class="title">Contact</h2>
+        </div>
+        <div class="contact__body">
+            <form action="" class="form" id="contact-form">
+                <label for="name" class="form__label">Name
+                    <input type="text" name="name" class="form__input" id="name" placeholder="Enter your name" required>
+                </label>
+                <label for="email" class="form__label">Email
+                    <input type="email" name="email" class="form__input" id="email" placeholder="Email" required>
+                </label>
+                <label for="textarea"  class="form__label">Message
+                    <textarea  id="textarea" name="message"  class="form__textarea" placeholder="Type your message here"></textarea>
+                </label>
+                <div class="form__action">
+                    <button type="submit" class="premium-btn">Submit</button>
+                </div>  
+
+            </form>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <!-- Footer -->
+        
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="./js/scripts.min.js"></script>
+
+</html>
