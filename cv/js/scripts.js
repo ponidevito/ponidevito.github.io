@@ -624,12 +624,22 @@ let sendEmail = (e) => {
 contactForm.addEventListener("submit", sendEmail);
 
 // success function
+
+const successMessages = {
+  en: "Your message has been successfully sent!",
+  es: "¡Tu mensaje ha sido enviado con éxito!",
+  ua: "Ваше повідомлення було успішно надіслано!"
+};
+
 function displaySuccesMessage() {
+  const currentLang = localStorage.getItem("lang") || "en"; // Використовуємо мову з localStorage, або за замовчуванням "en"
+
   toastr.options = {
     timeOut: 1500, // 1.5s
     positionClass: "toast-top-right", // зміна позиції
   };
-  toastr.success("Your message has been successfully sent!");
+
+  toastr.success(successMessages[currentLang]); // Виводимо повідомлення залежно від поточної мови
 }
 
 // select lenguage
