@@ -54,7 +54,7 @@ const swiperMain = new Swiper(".swiper-header-main", {
 
 const swiperWhoAre = new Swiper(".swiper-who-are", {
   loop: true, // Безкінечне повторення
-  speed: 5000,
+  speed: 1000,
   slidesPerView: 10,
   autoplay: {
     // enabled: true,
