@@ -9,7 +9,7 @@
 
 | Назва | Демо | Опис |
 |------|------|------|
-| **🎛 Diabet Calculator** | [Відкрити](https://ponidevito.github.io/diabet-calculator/) | Калькулятор дозування інсуліну + [Android APK](https://github.com/ponidevito/diabet-calculator/raw/main/dia-calculator.apk) |
+| **🎛 Diabet Calculator** | [Відкрити](https://ponidevito.github.io/diabet-calculator/) | Калькулятор дозування інсуліну + [Android APK][dia-calculator.apk](./dia-calculator.apk) |
 | **📋 CV / Resume** | [Відкрити](https://ponidevito.github.io/cv/) | Особиста сторінка-резюме |
 | **🎧 Podcast** | [Відкрити](https://ponidevito.github.io/podcast/) | Cайт для подкаст-платформи |
 | **🎨 Artificial** | [Відкрити](https://ponidevito.github.io/artificial/) | Лендинг із футуристичним дизайном |
