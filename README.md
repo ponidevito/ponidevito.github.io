@@ -39,7 +39,7 @@
 
 Деякі веб-проєкти доступні у вигляді Android-додатків.  
 Наприклад, [Diabet Calculator](https://ponidevito.github.io/diabet-calculator/) доступний для завантаження як `.apk`:  
-📦 [Завантажити APK](https://github.com/ponidevito/diabet-calculator/raw/main/dia-calculator.apk)
+📦 [Завантажити APK][📦 dia-calculator.apk](./dia-calculator.apk)
 
 ---
 
