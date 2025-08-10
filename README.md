@@ -9,6 +9,7 @@
 
 | Назва | Демо | Опис |
 |------|------|------|
+| **🖼 Arik Portfolio** | [Відкрити](https://ponidevito.github.io/arik-portfolio/) | Персональне портфоліо з анімацією GSAP на головній |
 | **🎛 Diabet Calculator** | [Відкрити](https://ponidevito.github.io/diabet-calculator/) | Калькулятор дозування інсуліну + [Android APK][dia-calculator.apk](./dia-calculator.apk) |
 | **📋 CV / Resume** | [Відкрити](https://ponidevito.github.io/cv/) | Особиста сторінка-резюме |
 | **🎧 Podcast** | [Відкрити](https://ponidevito.github.io/podcast/) | Cайт для подкаст-платформи |
