@@ -789,9 +789,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const path = window.location.pathname;
 
   if (mediaQuery.matches && hasScrollTrigger) {
-    if (path === "/" || path.includes("/index")) {
-      animateHomePage();
-    }
+    if (path.endsWith("/") || path.includes("/index")) {
+  animateHomePage();
+}
     if (path.includes("/services")) {
       animateServicesPage();
     }
@@ -817,5 +817,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
 });
+
 
 
