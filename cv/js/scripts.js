@@ -121,7 +121,13 @@ const langArr = {
     es: "Mostrar menos",
     ua: "Показати менше",
   },
+    submit: {
+    en: "Show less",
+    es: "Enviar",
+    ua: "Надіслати",
+  },
 };
+
 
 function topFunction() {
   document.body.scrollTop = 0;
