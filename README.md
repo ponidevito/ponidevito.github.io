@@ -9,12 +9,7 @@
 
 | Назва | Демо | Опис |
 |------|------|------|
-| **📽️ Collection Films** | [Відкрити](https://collection-films.org.ua/) | Web application for tracking watched movies and managing a personal watchlist.
-
-- Built using JavaScript and Firebase
-- Implemented authentication and Firestore database
-- Developed admin panel with CRUD functionality for managing movie content
-- Added rating system, search, and filtering |
+| **📽️ Collection Films** | [Відкрити](https://collection-films.org.ua/) | Web application for tracking watched movies and managing a personal watchlist. |
 | **🖼 Arik Portfolio** | [Відкрити](https://ponidevito.github.io/arik-portfolio/) | Персональне портфоліо з анімацією GSAP на головній |
 | **🎛 Diabet Calculator** | [Відкрити](https://ponidevito.github.io/diabet-calculator/) | Калькулятор дозування інсуліну + [Android APK][dia-calculator.apk](./dia-calculator.apk) |
 | **📋 CV / Resume** | [Відкрити](https://ponidevito.github.io/cv/) | Особиста сторінка-резюме |
