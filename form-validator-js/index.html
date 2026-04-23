@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+
+</head>
+
+<body class="main__body">
+    <!-- Header -->
+    
+
+    <div class="wrapper">
+
+        <!-- Main Page -->
+        <main class="main">
+
+            <section class="form">
+
+                <div class="form__container">
+
+                    <div class="form__body">
+                        <!-- Form -->
+                        <div class="form__item">
+    <form id="form" action="#" method="post" novalidate>
+
+        <div class="form-group">
+            <label class="form-group__label" for="firstName">Ім'я</label>
+            <input class="form-group__input" type="text" id="firstName" name="firstName" autocomplete="given-name"
+                aria-describedby="firstName-error" required />
+            <span id="firstName-error" class="form-group__error"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="form-group__label" for="lastName">Прізвище</label>
+            <input class="form-group__input" type="text" id="lastName" name="lastName" autocomplete="family-name"
+                aria-describedby="lastName-error" required />
+            <span id="lastName-error" class="form-group__error"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="form-group__label" for="email">Email</label>
+            <input class="form-group__input" type="email" id="email" name="email" autocomplete="email"
+                aria-describedby="email-error" required />
+            <span id="email-error" class="form-group__error"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="form-group__label" for="phone">Телефон</label>
+            <input class="form-group__input phone__input" name="phone" type="tel" id="phone" autocomplete="tel"
+                aria-describedby="phone-error" required />
+            <span id="phone-error" class="form-group__error"></span>
+        </div>
+
+        <div class="form__actions">
+            <button type="submit" class="form__btn">Відправити</button>
+        </div>
+
+    </form>
+</div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        
+
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/scripts.min.js"></script>
+</body>
+
+
+</html>
