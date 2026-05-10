@@ -1,0 +1,2616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Landing Page Project</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Frontend landing page built with HTML, CSS and JavaScript. Clean UI, responsive layout and modern design approach.">
+    <meta name="keywords" content="frontend developer, portfolio, html css javascript, landing page">
+    <meta name="author" content="Oleg Kravchuk">
+
+    <!-- Open Graph  -->
+    <meta property="og:title" content="Frontend Landing Page Project">
+    <meta property="og:description" content="Responsive landing page built with HTML, CSS and JavaScript.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/preview.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:site_name" content="Oleg Kravchuk">
+
+    <link rel="canonical" href="#">
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:regular,600,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:regular,600&display=swap" rel="stylesheet" />
+
+    <!-- fav -->
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.min.css">
+
+
+</head>
+
+<body>
+    <button class="scroll-top" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5L5 12H9V19H15V12H19L12 5Z" fill="currentColor" />
+        </svg>
+    </button>
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+    <!-- Navbar -->
+    <div class="header">
+        <div class="header__container">
+            <div class="navbar">
+                <div class="logo"> <a href="/"><img src="./img/logo-ok.webp" alt="Oleg Kravchuk Logo"></a> </div>
+                <nav aria-label="Navigation principale">
+                    <ul class="menu" id="main-nav">
+                        <li class="menu__item"><a href="about.html" class="menu__item-link" data-scroll>About</a></li>
+                        <li class="menu__item"><a href="contact.html" class="menu__item-link" data-scroll>Contact</a></li>
+                        <li class="menu__item"><a href="#" class="header__login menu__item-link btn btn--nav" data-scroll>Login</a></li>
+                    </ul>
+                </nav>
+                <div class="effect">
+                    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <!-- Main Page -->
+        <main class="main">
+            <!-- Hero -->
+            <section class="hero">
+    <div class="hero__container">
+        <div class="hero__body">
+            <div class="hero__item">
+                <div class="hero__info">
+                    <h1 class="hero__title">Modern Frontend Landing Page</h1>
+                    <p class="hero__undertitle">This project demonstrates a responsive landing page built with pure
+                        HTML, CSS and JavaScript.
+                        It focuses on clean layout structure, reusable components and performance optimization.</p>
+                </div>
+            </div>
+            <div class="hero__item">
+                <div class="form-wrapper">
+                    <h2 class="form-title">Get Started</h2>
+                    <form class="form" action="/" method="POST" novalidate>
+                        <div class="form__field">
+                            <label for="firstname" class="visually-hidden">First Name</label>
+                            <input class="form__input" id="firstname" type="text" name="firstname"
+                                placeholder="First Name">
+                        </div>
+
+                        <div class="form__field">
+                            <label for="lastname" class="visually-hidden">Last Name</label>
+                            <input class="form__input" id="lastname" type="text" name="lastname" placeholder="Last Name"
+                                autocomplete="family-name">
+                        </div>
+
+                        <div class="form__field">
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input class="form__input" id="email" type="email" name="email" placeholder="Email"
+                                autocomplete="email">
+                        </div>
+
+                        <div class="form__field">
+                            <label for="phone" class="visually-hidden">Phone</label>
+                            <input class="form__input" id="phone" type="tel" name="phone" maxlength="15"
+                                pattern="^\+?[0-9]{8,15}$" placeholder="Phone" autocomplete="tel">
+                        </div>
+                        <button class="form__btn btn" type="submit">Sign Up Now</button>
+                        <p class="form__disclaimer">
+                            By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy
+                                Policy</a>.
+                            This page is a demo project created for portfolio purposes only.
+
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- Investors -->
+            <div class="investors ">
+
+    <div class="marquee">
+        <div class="investors__body">
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/hugo.webp" type="image/webp">
+                        <img src="./img/investors-ticker/hugo.jpg" alt="Alex">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Alex</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            1000 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            11 485 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/pauline.webp" type="image/webp">
+                        <img src="./img/investors-ticker/pauline.jpg" alt="Emma">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Emma</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            643 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            4 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/alexandre.webp" type="image/webp">
+                        <img src="./img/investors-ticker/alexandre.jpg" alt="Daniel">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Daniel</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            520 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            2 407 €
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/sophie.webp" type="image/webp">
+                        <img src="./img/investors-ticker/sophie.jpg" alt="Olivia">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Olivia</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            750 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            8 300 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/marie.webp" type="image/webp">
+                        <img src="./img/investors-ticker/marie.jpg" alt="Sophia">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Sophia</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            974 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            3 433 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/antoine.webp" type="image/webp">
+                        <img src="./img/investors-ticker/antoine.jpg" alt="Michael">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Michael</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            240 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            8 894 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/jean.webp" type="image/webp">
+                        <img src="./img/investors-ticker/jean.jpg" alt="James">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">James</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            319 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            4 207 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/julie.webp" type="image/webp">
+                        <img src="./img/investors-ticker/julie.jpg" alt="Emily">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Emily</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            788 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            5 202 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/louis.webp" type="image/webp">
+                        <img src="./img/investors-ticker/louis.jpg" alt="William">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">William</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            243 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            1 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/chloe.webp" type="image/webp">
+                        <img src="./img/investors-ticker/chloe.jpg" alt="Ava">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Ava</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            563 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            3 433 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/gabriel.webp" type="image/webp">
+                        <img src="./img/investors-ticker/gabriel.jpg" alt="Ethan">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Ethan</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            158 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            9 945 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/claire.webp" type="image/webp">
+                        <img src="./img/investors-ticker/claire.jpg" alt="Claire">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Charlotte</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            643 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            4 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/thomas.webp" type="image/webp">
+                        <img src="./img/investors-ticker/thomas.jpg" alt="Jacob">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Jacob</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            243 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            7 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/camille.webp" type="image/webp">
+                        <img src="./img/investors-ticker/camille.jpg" alt="Mia">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Mia</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            521 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            2 704 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/lea.webp" type="image/webp">
+                        <img src="./img/investors-ticker/lea.jpg" alt="Isabella">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Isabella</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            823 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            5 269 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/lucas.webp" type="image/webp">
+                        <img src="./img/investors-ticker/lucas.jpg" alt="Lucas">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Lucas</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            643 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            4 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/elodie.webp" type="image/webp">
+                        <img src="./img/investors-ticker/elodie.jpg" alt="Grace">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Grace</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            745 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            9522 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/pierre.webp" type="image/webp">
+                        <img src="./img/investors-ticker/pierre.jpg" alt="Henry">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Henry</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            833 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            8 997 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/manon.webp" type="image/webp">
+                        <img src="./img/investors-ticker/manon.jpg" alt="Lily">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Lily</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            447 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            5 064 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/nicolas.webp" type="image/webp">
+                        <img src="./img/investors-ticker/nicolas.jpg" alt="Benjamin">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Benjamin</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            276 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            6 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- copy -->
+
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/hugo.webp" type="image/webp">
+                        <img src="./img/investors-ticker/hugo.jpg" alt="Alex">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Alex</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            1000 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            11 485 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/pauline.webp" type="image/webp">
+                        <img src="./img/investors-ticker/pauline.jpg" alt="Emma">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Emma</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            643 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            4 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/alexandre.webp" type="image/webp">
+                        <img src="./img/investors-ticker/alexandre.jpg" alt="Daniel">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Daniel</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            520 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            2 407 €
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/sophie.webp" type="image/webp">
+                        <img src="./img/investors-ticker/sophie.jpg" alt="Olivia">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Olivia</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            750 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            8 300 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/marie.webp" type="image/webp">
+                        <img src="./img/investors-ticker/marie.jpg" alt="Sophia">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Sophia</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            974 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            3 433 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/antoine.webp" type="image/webp">
+                        <img src="./img/investors-ticker/antoine.jpg" alt="Michael">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Michael</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            240 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            8 894 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/jean.webp" type="image/webp">
+                        <img src="./img/investors-ticker/jean.jpg" alt="James">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">James</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            319 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            4 207 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/julie.webp" type="image/webp">
+                        <img src="./img/investors-ticker/julie.jpg" alt="Emily">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Emily</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            788 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            5 202 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/louis.webp" type="image/webp">
+                        <img src="./img/investors-ticker/louis.jpg" alt="William">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">William</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            243 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            1 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/chloe.webp" type="image/webp">
+                        <img src="./img/investors-ticker/chloe.jpg" alt="Ava">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Ava</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            563 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            3 433 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/gabriel.webp" type="image/webp">
+                        <img src="./img/investors-ticker/gabriel.jpg" alt="Ethan">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Ethan</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            158 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            9 945 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/claire.webp" type="image/webp">
+                        <img src="./img/investors-ticker/claire.jpg" alt="Claire">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Charlotte</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            643 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            4 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/thomas.webp" type="image/webp">
+                        <img src="./img/investors-ticker/thomas.jpg" alt="Jacob">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Jacob</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            243 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            7 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/camille.webp" type="image/webp">
+                        <img src="./img/investors-ticker/camille.jpg" alt="Mia">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Mia</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            521 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            2 704 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/lea.webp" type="image/webp">
+                        <img src="./img/investors-ticker/lea.jpg" alt="Isabella">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Isabella</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            823 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            5 269 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/lucas.webp" type="image/webp">
+                        <img src="./img/investors-ticker/lucas.jpg" alt="Lucas">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Lucas</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            643 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            4 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/elodie.webp" type="image/webp">
+                        <img src="./img/investors-ticker/elodie.jpg" alt="Grace">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Grace</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            745 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            9522 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/pierre.webp" type="image/webp">
+                        <img src="./img/investors-ticker/pierre.jpg" alt="Henry">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Henry</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            833 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            8 997 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/manon.webp" type="image/webp">
+                        <img src="./img/investors-ticker/manon.jpg" alt="Lily">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Lily</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            447 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            5 064 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investor-card" aria-hidden="true">
+                <div class="investor-card__image">
+                    <picture>
+                        <source srcset="./img/investors-ticker/nicolas.webp" type="image/webp">
+                        <img src="./img/investors-ticker/nicolas.jpg" alt="Benjamin">
+                    </picture>
+                </div>
+
+                <div class="investor-card__content">
+                    <div class="investor-card__top">
+                        <h3 class="investor-card__name">Benjamin</h3>
+                        <span class="investor-card__trend investor-card__trend--up"><svg width="9" height="13"
+                                viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.70812 0.170834C4.48032 -0.0569718 4.11097 -0.0569718 3.88316 0.170834L0.170854 3.88314C-0.0569522 4.11095 -0.0569521 4.4803 0.170854 4.7081C0.39866 4.93591 0.768006 4.93591 0.995812 4.7081L4.29564 1.40827L7.59547 4.7081C7.82328 4.93591 8.19263 4.93591 8.42043 4.7081C8.64824 4.4803 8.64824 4.11095 8.42043 3.88314L4.70812 0.170834ZM3.71231 12.25C3.71231 12.5721 3.97348 12.8333 4.29564 12.8333C4.61781 12.8333 4.87898 12.5721 4.87898 12.25L4.29564 12.25L3.71231 12.25ZM4.29564 0.583313L3.71231 0.583313L3.71231 12.25L4.29564 12.25L4.87898 12.25L4.87898 0.583313L4.29564 0.583313Z"
+                                    fill="#109C35" />
+                            </svg></span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Performance:</span>
+                        <span class="investor-card__value investor-card__value--blue">
+                            276 €
+                        </span>
+                    </div>
+
+                    <div class="investor-card__row">
+                        <span class="investor-card__label">Engagement:</span>
+                        <span class="investor-card__value investor-card__value--green">
+                            6 407 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+            <!-- About platform -->
+            <section class="about-platform">
+    <div class="about-platform__container">
+        <h2 class="title-h2">Clean and Modern Frontend Experience</h2>
+
+        <div class="about-platform__body">
+            <div class="about-platform__item">
+                <div class="about-platform__info">
+                    <p>
+                        This project represents a modern frontend landing page focused on
+                        clean design, usability and performance. The layout is built with a
+                        structured approach to ensure readability and smooth navigation
+                        across all devices.
+                    </p>
+
+                    <p>
+                        The interface is designed to be intuitive and user-friendly,
+                        allowing visitors to quickly understand the purpose of the product.
+                        Special attention was given to spacing, typography and responsive
+                        behavior to create a consistent user experience.
+                    </p>
+
+                    <p>
+                        The goal of this project is to demonstrate practical frontend
+                        development skills, including semantic HTML, scalable CSS
+                        architecture and interactive JavaScript elements. It can be easily
+                        adapted for real-world applications.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-platform__item">
+
+                <picture>
+                        <source srcset="./img/about-platform/frontend-ui.webp" type="image/webp">
+                        <img src="./img/about-platform/frontend-ui.jpg" alt="Frontend UI design">
+                    </picture>
+            </div>
+        </div>
+
+        <div class="about-platform__actions">
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </div>
+</section>
+            <!-- Plans -->
+            <section class="plans">
+  <div class="plans__container container">
+
+    <h2 class="plans__title title-h2">Key Features of the Project</h2>
+
+    <div class="plans__text">
+      <p>
+        This section highlights the main features implemented in this frontend project.
+        The focus is on clean architecture, responsive design and modern UI practices.
+      </p>
+      <p>
+        Each feature demonstrates practical skills used in real-world development,
+        including layout structuring, component-based styling and interactive behavior.
+      </p>
+    </div>
+
+    <div class="plans__grid">
+
+      <div class="plans__card card">
+        <div class="card__left">
+          <div class="card__number">100%</div>
+          <div class="card__interest">Responsive</div>
+        </div>
+        <div class="card__right">
+          <div class="card__label">Devices</div>
+          <div class="card__duration">Mobile / Tablet / Desktop</div>
+        </div>
+      </div>
+
+      <div class="plans__card card">
+        <div class="card__left">
+          <div class="card__number">Fast</div>
+          <div class="card__interest">Performance</div>
+        </div>
+        <div class="card__right">
+          <div class="card__label">Optimized</div>
+          <div class="card__duration">Lightweight assets</div>
+        </div>
+      </div>
+
+      <div class="plans__card card">
+        <div class="card__left">
+          <div class="card__number">Clean</div>
+          <div class="card__interest">Code</div>
+        </div>
+        <div class="card__right">
+          <div class="card__label">Structure</div>
+          <div class="card__duration">Semantic HTML</div>
+        </div>
+      </div>
+
+      <div class="plans__card card">
+        <div class="card__left">
+          <div class="card__number">Modern</div>
+          <div class="card__interest">UI</div>
+        </div>
+        <div class="card__right">
+          <div class="card__label">Design</div>
+          <div class="card__duration">Flexbox / Grid</div>
+        </div>
+      </div>
+
+      <div class="plans__card card">
+        <div class="card__left">
+          <div class="card__number">JS</div>
+          <div class="card__interest">Logic</div>
+        </div>
+        <div class="card__right">
+          <div class="card__label">Features</div>
+          <div class="card__duration">Form validation</div>
+        </div>
+      </div>
+
+      <div class="plans__card card">
+        <div class="card__left">
+          <div class="card__number">UX</div>
+          <div class="card__interest">Focus</div>
+        </div>
+        <div class="card__right">
+          <div class="card__label">Experience</div>
+          <div class="card__duration">User-friendly UI</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="plans__actions">
+      <a href="#" class="btn btn--primary">View Source Code</a>
+    </div>
+
+  </div>
+</section>
+            <!-- Why -->
+            <section class="why">
+    <div class="why__container container">
+
+        <h2 class="why__title title-h2">
+            Why This Project Stands Out
+        </h2>
+
+        <p class="why__subtitle">
+            This project focuses on building a clean, modern and user-friendly interface.
+            The goal was to create a layout that is easy to navigate, visually consistent
+            and adaptable across different devices without sacrificing performance.
+        </p>
+
+        <div class="why__body">
+
+            <div class="why__item left-item">
+
+                <picture>
+                    <source srcset="./img/why/frontend-workspace.webp" type="image/webp">
+                    <img src="./img/why/frontend-workspace.jpg" alt="Frontend development workspace">
+                </picture>
+
+                <p>
+                    The layout is designed with a strong emphasis on usability and clarity.
+                    Each section follows a logical structure, making it easy for users to
+                    interact with the interface and understand the content without confusion.
+                </p>
+            </div>
+
+            <div class="why__item right-item">
+                <h3 class="why__list-title">Key highlights:</h3>
+
+                <ul class="why__list">
+                    <li class="why__list-item">Clean and structured layout with consistent spacing</li>
+                    <li class="why__list-item">Fully responsive design for all screen sizes</li>
+                    <li class="why__list-item">Modern UI built with Flexbox and CSS Grid</li>
+                    <li class="why__list-item">Optimized performance with lightweight assets</li>
+                    <li class="why__list-item">Interactive elements using JavaScript</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+            <!-- Calculator -->
+            <section class="calculator">
+    <div class="calculator__container container">
+        <div class="calculator__body">
+
+            <div class="calculator__info">
+                <h2 class="calculator__title title-h2">
+                    Interactive UI Demo
+                </h2>
+
+                <p class="calculator__text">
+                    This interactive component demonstrates dynamic UI updates using JavaScript.
+                    Users can adjust values and instantly see changes, showcasing real-time interaction
+                    and responsive behavior.
+                </p>
+
+                <div class="calculator__actions">
+                    <a href="#" class="btn">Try Interaction</a>
+                </div>
+            </div>
+
+            <div class="calculator__widget">
+
+                <div class="calculator__row">
+                    <span class="calculator__label">Items</span>
+                    <span class="calculator__value calculator__value--green" id="deposit-val">1</span>
+                </div>
+
+                <input class="calculator__range calculator__range--green" type="range" id="deposit" min="1" max="6"
+                    value="1">
+
+                <div class="calculator__marks">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                </div>
+
+                <div class="calculator__row">
+                    <span class="calculator__label">Complexity</span>
+                    <span class="calculator__value calculator__value--blue" id="period-val">Basic</span>
+                </div>
+
+                <input class="calculator__range calculator__range--blue" type="range" id="period" min="0" max="2"
+                    value="0">
+
+                <div class="calculator__marks">
+                    <span>Basic</span>
+                    <span>Medium</span>
+                    <span>Advanced</span>
+                </div>
+
+                <div class="calculator__result">
+                    <p class="calculator__result-label">Estimated Result</p>
+                    <p class="calculator__result-value" id="result-val">Simple Layout</p>
+                </div>
+
+            </div>
+
+            <div class="calculator__actions calculator__actions--mobile">
+                <a href="#" class="btn">Try Interaction</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+            <!-- live -->
+            <section class="live">
+  <div class="live__container">
+
+    <h2 class="live__title title-h2">
+      Live User Activity
+    </h2>
+
+    <div class="live__table-wrapper">
+      <table class="table" aria-label="Live user activity data">
+        <thead class="table__head">
+          <tr class="table__row table__row--head">
+            <th class="table__cell" scope="col">User</th>
+            <th class="table__cell" scope="col">Balance</th>
+            <th class="table__cell" scope="col">Change (24h)</th>
+            <th class="table__cell" scope="col">Performance</th>
+            <th class="table__cell" scope="col">Time</th>
+          </tr>
+        </thead>
+
+        <tbody class="table__body" id="table-body">
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+            <!-- Demo -->
+            <section class="demo">
+    <div class="demo__container container">
+
+        <h2 class="demo__title title-h2">
+            Explore the Demo Version
+        </h2>
+
+        <p class="demo__undertitle">
+            This demo allows you to explore the interface, understand the layout structure
+            and experience how the application works in real time. It provides a clear
+            overview of the UI components and interaction flow before diving deeper into
+            the project.
+        </p>
+
+        <div class="demo__body">
+
+            <div class="demo__content">
+                <h3 class="demo__subtitle">
+                    What you can explore
+                </h3>
+
+                <ul class="demo__list">
+                    <li>Clean and intuitive user interface</li>
+                    <li>Structured layout and navigation flow</li>
+                    <li>Interactive elements and UI behavior</li>
+                    <li>Responsive design across devices</li>
+                    <li>Modern frontend development approach</li>
+                </ul>
+            </div>
+
+            <div class="demo__image">
+
+                <picture>
+                    <source srcset="./img/demo/demo.webp" type="image/webp">
+                    <img src="./img/demo/demo.jpg" loading="lazy" alt="Frontend demo interface">
+                </picture>
+            </div>
+
+        </div>
+
+        <div class="demo__actions">
+            <a href="#" class="btn">View Demo</a>
+        </div>
+
+    </div>
+</section>
+            <!-- Tech -->
+            <section class="tech">
+    <div class="tech__container container">
+
+        <h2 class="tech__title title-h2">
+            Development Approach & Technology
+        </h2>
+
+        <div class="tech__body">
+
+            <div class="tech__item">
+                <div class="tech__image">
+                    <picture>
+                        <source srcset="./img/tech/tech.webp" type="image/webp">
+                        <img src="./img/demo/tech.jpg" loading="lazy" alt="Frontend development workspace">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="tech__item">
+                <div class="tech__content">
+
+                    <p class="tech__text">
+                        This project is built with a focus on clean structure, performance and
+                        maintainability. The layout follows a modular approach, making it easy
+                        to scale and reuse components across different sections.
+                    </p>
+
+                    <p class="tech__text">
+                        Special attention was given to responsive design and consistent UI behavior.
+                        The interface adapts smoothly across screen sizes while maintaining clarity
+                        and usability.
+                    </p>
+
+                    <h3 class="tech__subtitle">
+                        Tech Stack
+                    </h3>
+
+                    <p class="tech__text">
+                        HTML, CSS (SCSS), JavaScript
+                    </p>
+
+                    <h3 class="tech__subtitle">
+                        Development Focus
+                    </h3>
+
+                    <p class="tech__quote">
+                        <em>
+                            "The goal was to transform a complex layout into a clean, intuitive
+                            and user-friendly interface with smooth interactions and modern design practices."
+                        </em>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+            <!-- Trust -->
+            <section class="trust">
+    <div class="trust__container container">
+
+        <h2 class="trust__title title-h2">
+            Project Highlights
+        </h2>
+
+        <div class="trust__grid">
+
+            <div class="trust__item trust__item--blue">
+                <h3 class="trust__subtitle">Clean Code Structure</h3>
+                <p class="trust__text">
+                    The project is built with a clear and maintainable structure, making it easy
+                    to scale, update and reuse components across different sections.
+                </p>
+            </div>
+
+            <div class="trust__item trust__item--green">
+                <h3 class="trust__subtitle">Responsive Design</h3>
+                <p class="trust__text">
+                    The layout adapts smoothly across all screen sizes, ensuring a consistent
+                    user experience on mobile, tablet and desktop devices.
+                </p>
+            </div>
+
+            <div class="trust__item trust__item--yellow">
+                <h3 class="trust__subtitle">Modern UI Approach</h3>
+                <p class="trust__text">
+                    The interface follows modern design principles with clean spacing,
+                    readable typography and intuitive navigation.
+                </p>
+            </div>
+
+            <div class="trust__item trust__item--gray">
+                <h3 class="trust__subtitle">Interactive Elements</h3>
+                <p class="trust__text">
+                    JavaScript is used to create dynamic interactions, improving usability
+                    and making the interface more engaging for users.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+            <!-- Reviews -->
+            <section class="reviews">
+    <div class="reviews__container container">
+
+        <h2 class="reviews__title title-h2">
+            What Users Say About This Project
+        </h2>
+
+        <p class="reviews__text">
+            These testimonials highlight user impressions of the interface, usability
+            and overall experience of the project.
+        </p>
+        <p class="reviews__note">
+            *These testimonials are fictional and created for demonstration purposes only.
+        </p>
+
+        <div class="reviews__swiper">
+            <div class="swiper swiper__reviews">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="reviews__card">
+                            <div class="reviews__top">
+                                <img src="img/reviews/antoine.jpg" alt="Alex" class="reviews__avatar">
+                                <div>
+                                    <div class="reviews__name">Alex</div>
+                                    <div class="reviews__city">London</div>
+                                </div>
+                            </div>
+                            <p class="reviews__desc">
+                                “The interface feels clean and easy to navigate. Everything is structured
+                                in a way that makes sense, even on the first interaction.”
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="reviews__card">
+                            <div class="reviews__top">
+                                <img src="img/reviews/claire.jpg" alt="Emma" class="reviews__avatar">
+                                <div>
+                                    <div class="reviews__name">Emma</div>
+                                    <div class="reviews__city">Berlin</div>
+                                </div>
+                            </div>
+                            <p class="reviews__desc">
+                                “I like how smooth and responsive the layout is. It works well
+                                across different screen sizes without breaking.”
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="reviews__card">
+                            <div class="reviews__top">
+                                <img src="img/reviews/julien.jpg" alt="Daniel" class="reviews__avatar">
+                                <div>
+                                    <div class="reviews__name">Daniel</div>
+                                    <div class="reviews__city">New York</div>
+                                </div>
+                            </div>
+                            <p class="reviews__desc">
+                                “The demo helped me understand how the interface works.
+                                It’s simple, interactive and well designed.”
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="reviews__card">
+                            <div class="reviews__top">
+                                <img src="img/reviews/camille.jpg" alt="Sophia" class="reviews__avatar">
+                                <div>
+                                    <div class="reviews__name">Sophia</div>
+                                    <div class="reviews__city">Amsterdam</div>
+                                </div>
+                            </div>
+                            <p class="reviews__desc">
+                                “The overall experience feels modern and polished.
+                                The design is clean and easy to follow.”
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="reviews__card">
+                            <div class="reviews__top">
+                                <img src="img/reviews/nicolas.jpg" alt="Michael" class="reviews__avatar">
+                                <div>
+                                    <div class="reviews__name">Michael</div>
+                                    <div class="reviews__city">Toronto</div>
+                                </div>
+                            </div>
+                            <p class="reviews__desc">
+                                “The structure of the page is very clear. It feels like a real product,
+                                not just a template.”
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-pagination reviews-pagination"></div>
+
+            <div class="swiper__actions">
+                <button type="button" class="swiper__button swiper__button--prev" aria-label="Previous slide">
+                    <svg width="13" height="22">
+                        <path d="M12.5467 1.88L10.6667 0L0 10.6667L10.6667 21.3333L12.5467 19.4533L3.77333 10.6667"
+                            fill="#202124" />
+                    </svg>
+                </button>
+
+                <button type="button" class="swiper__button swiper__button--next" aria-label="Next slide">
+                    <svg width="13" height="22">
+                        <path d="M0 19.4533L1.88 21.3333L12.5467 10.6667L1.88 0L0 1.88L8.77333 10.6667"
+                            fill="#202124" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+            <!-- Steps -->
+            <section class="steps">
+  <div class="steps__container container">
+
+    <h2 class="steps__title title-h2">
+      How the Project Works
+    </h2>
+
+    <p class="steps__text">
+      This section demonstrates the basic flow of the application and how users 
+      interact with the interface. The process is simple, intuitive and designed 
+      to guide users step by step.
+    </p>
+
+    <div class="steps__grid">
+
+      <!-- item -->
+      <div class="steps__item">
+        <div class="steps__image steps__image--yellow">
+          <picture>
+            <img src="./img/steps/step1.png" loading="lazy" alt="User form interface">
+          </picture>
+        </div>
+
+        <span class="steps__label steps__label--yellow">Step 1</span>
+
+        <h3 class="steps__subtitle">
+          Fill in the Form
+        </h3>
+
+        <p class="steps__desc">
+          Users start by entering basic information into a clean and simple form. 
+          The interface is designed for clarity and ease of use.
+        </p>
+      </div>
+
+      <!-- item -->
+      <div class="steps__item">
+        <div class="steps__image steps__image--blue">
+          <picture>
+            <img src="./img/steps/step2.png" loading="lazy" alt="User profile screen">
+          </picture>
+        </div>
+
+        <span class="steps__label steps__label--blue">Step 2</span>
+
+        <h3 class="steps__subtitle">
+          Explore the Interface
+        </h3>
+
+        <p class="steps__desc">
+          After submitting the form, users can explore the interface and 
+          interact with different UI components and features.
+        </p>
+      </div>
+
+      <!-- item -->
+      <div class="steps__item">
+        <div class="steps__image steps__image--green">
+          <picture>
+            <img src="./img/steps/step3.png" loading="lazy" alt="Dashboard UI">
+          </picture>
+        </div>
+
+        <span class="steps__label steps__label--green">Step 3</span>
+
+        <h3 class="steps__subtitle">
+          Interact with Features
+        </h3>
+
+        <p class="steps__desc">
+          Users can interact with dynamic elements such as sliders, forms and 
+          live updates, demonstrating real-time UI behavior.
+        </p>
+      </div>
+
+    </div>
+
+    <p class="steps__bottom-text">
+      This workflow reflects a typical user journey and highlights how the interface 
+      is structured to provide a smooth and intuitive experience.
+    </p>
+
+    <div class="steps__actions">
+      <a href="#" class="btn">View Project</a>
+    </div>
+
+  </div>
+</section>
+            <!-- Logo brokers ticker -->
+            <div class="ticker">
+    <div class="ticker__track">
+
+        <div class="ticker__item"><img src="./img/brokers-logo/binance.svg" alt="Binance"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/bitget.svg" alt="Bitget"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/bybit.svg" alt="Bybit"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/coinbase.svg" alt="Coinbase"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/kraken.svg" alt="Kraken"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/okx.svg" alt="Okx"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/kucoin.svg" alt="Kucoin"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/gemini.svg" alt="Gemini"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/bitstamp.svg" alt="Bitstamp"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/bitkub.svg" alt="Bitkub"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/mexc.svg" alt="Mexc global"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/gate.svg" alt="Gate io"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/huobi.svg" alt="Huobi"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/upbit.svg" alt="Upbit"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/bitfinex.svg" alt="Bitfinex"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/poloniex.svg" alt="Poloniex"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/bithumb.svg" alt="Bithumb"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/phemex.svg" alt="Phemex"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/lbank.svg" alt="Lbank"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/bingx.svg" alt="Bingx"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/whitebit.svg" alt="Whitebit"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/xt.svg" alt="XT.com"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/bitmart.svg" alt="Bitmart"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/coincheck.svg" alt="Coincheck"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/indorax.svg" alt="Indorax"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/wazirx.svg" alt="Wazirx"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/coinex.svg" alt="Coinex"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/probit.svg" alt="Probit"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/bitso.svg" alt="Bitso"></div>
+        <div class="ticker__item"><img src="./img/brokers-logo/korbit.svg" alt="Korbit"></div>
+
+        <!-- copy -->
+
+
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/binance.svg" alt="Binance"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/bitget.svg" alt="Bitget"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/bybit.svg" alt="Bybit"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/coinbase.svg" alt="Coinbase"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/kraken.svg" alt="Kraken"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/okx.svg" alt="Okx"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/kucoin.svg" alt="Kucoin"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/gemini.svg" alt="Gemini"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/bitstamp.svg" alt="Bitstamp"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/bitkub.svg" alt="Bitkub"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/mexc.svg" alt="Mexc global"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/gate.svg" alt="Gate io"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/huobi.svg" alt="Huobi"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/upbit.svg" alt="Upbit"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/bitfinex.svg" alt="Bitfinex"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/poloniex.svg" alt="Poloniex"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/bithumb.svg" alt="Bithumb"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/phemex.svg" alt="Phemex"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/lbank.svg" alt="Lbank"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/bingx.svg" alt="Bingx"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/whitebit.svg" alt="Whitebit"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/xt.svg" alt="XT.com"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/bitmart.svg" alt="Bitmart"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/coincheck.svg" alt="Coincheck"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/indorax.svg" alt="Indorax"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/wazirx.svg" alt="Wazirx"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/coinex.svg" alt="Coinex"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/probit.svg" alt="Probit"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/bitso.svg" alt="Bitso"></div>
+        <div class="ticker__item" aria-hidden="true"><img src="./img/brokers-logo/korbit.svg" alt="Korbit"></div>
+
+
+    </div>
+</div>
+            <!-- Faq -->
+            <div class="faq">
+    <div class="faq__container">
+
+        <h2 class="faq__title title-h2">Frequently Asked Questions</h2>
+
+        <div class="accordion">
+
+            <div class="accordion__item">
+                <div class="accordion__item-trigger">
+                    <div class="trigger__text">Is this project fully responsive?</div>
+                    <div class="trigger__img">
+                        <span class="trigger__line-1"></span>
+                        <span class="trigger__line-2"></span>
+                    </div>
+                </div>
+                <div class="accordion__item-content">
+                    <div class="content__text">
+                        Yes, the layout is designed to work across all screen sizes including mobile, tablet and desktop
+                        devices.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <div class="accordion__item-trigger">
+                    <div class="trigger__text">What technologies were used?</div>
+                    <div class="trigger__img">
+                        <span class="trigger__line-1"></span>
+                        <span class="trigger__line-2"></span>
+                    </div>
+                </div>
+                <div class="accordion__item-content">
+                    <div class="content__text">
+                        The project is built using HTML, SCSS and JavaScript, with a focus on clean structure and
+                        maintainability.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <div class="accordion__item-trigger">
+                    <div class="trigger__text">Does this project include interactive elements?</div>
+                    <div class="trigger__img">
+                        <span class="trigger__line-1"></span>
+                        <span class="trigger__line-2"></span>
+                    </div>
+                </div>
+                <div class="accordion__item-content">
+                    <div class="content__text">
+                        Yes, it includes interactive components such as sliders, dynamic content updates and UI
+                        animations.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <div class="accordion__item-trigger">
+                    <div class="trigger__text">Is this a real product?</div>
+                    <div class="trigger__img">
+                        <span class="trigger__line-1"></span>
+                        <span class="trigger__line-2"></span>
+                    </div>
+                </div>
+                <div class="accordion__item-content">
+                    <div class="content__text">
+                        No, this project is created for demonstration purposes to showcase frontend development skills
+                        and UI design.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+            <!-- CTA -->
+            <section class="cta">
+    <div class="cta__container container">
+
+        <div class="cta__body">
+
+            <div class="cta__content">
+
+                <h2 class="cta__title title-h2">
+                    Explore the Project
+                </h2>
+
+                <p class="cta__text">
+                    This project demonstrates a modern frontend approach with a focus on clean layout,
+                    responsive design and interactive elements. It showcases how structured UI and
+                    well-organized code can improve user experience.
+                </p>
+
+                <p class="cta__text cta__text--bold">
+                    Feel free to explore the interface, interact with the components and review the implementation.
+                </p>
+
+                <div class="cta__image">
+
+                    <picture>
+                        <source srcset="./img/cta/woman-couch.webp" type="image/webp">
+                        <img src="./img/cta/woman-couch.jpg" alt="Frontend development workspace">
+                    </picture>
+                </div>
+
+            </div>
+
+            <div class="cta__form">
+
+                <!-- form -->
+                <div class="form-wrapper">
+                    <h2 class="form-title">
+                        Get Started</h2>
+
+                    <form class="form" action="/" method="POST" novalidate>
+                        <div class="form__field">
+                            <label for="firstname1" class="visually-hidden">First Name</label>
+                            <input class="form__input" id="firstname1" type="text" name="firstname"
+                                placeholder="First Name">
+                        </div>
+
+                        <div class="form__field">
+                            <label for="lastname1" class="visually-hidden">Last Name</label>
+                            <input class="form__input" id="lastname1" type="text" name="lastname"
+                                placeholder="Last Name" autocomplete="family-name">
+                        </div>
+
+                        <div class="form__field">
+                            <label for="email1" class="visually-hidden">Email</label>
+                            <input class="form__input" id="email1" type="email" name="email" placeholder="Email"
+                                autocomplete="email">
+                        </div>
+
+                        <div class="form__field">
+                            <label for="phone1" class="visually-hidden">Phone</label>
+                            <input class="form__input" id="phone1" type="tel" name="phone" maxlength="15"
+                                pattern="^\+?[0-9]{8,15}$" placeholder="Phone" autocomplete="tel">
+                        </div>
+                        <button class="form__btn btn" type="submit">Sign Up Now</button>
+                        <p class="form__disclaimer">
+                            By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy
+                                Policy</a>.
+                            This page is a demo project created for portfolio purposes only.
+
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+    <div class="footer__container container">
+
+        <div class="footer__body">
+
+            <div class="footer__top">
+
+                <div class="footer__logo">
+                    <a href="/" aria-label="Oleg Kravchuk — Home">
+                        <img src="./img/logo-ok.webp" alt="Oleg Kravchuk Logo">
+                    </a>
+                </div>
+
+                <div class="footer__payments">
+                    <div class="footer__pay">
+                        <img src="img/footer/paypal.svg" alt="PayPal">
+                    </div>
+                    <div class="footer__pay">
+                        <img src="img/footer/mastercard.svg" alt="Mastercard">
+                    </div>
+                    <div class="footer__pay">
+                        <img src="img/footer/visa.svg" alt="Visa">
+                    </div>
+                    <div class="footer__pay">
+                        <img src="img/footer/apay.svg" alt="Apple Pay">
+                    </div>
+                    <div class="footer__pay">
+                        <img src="img/footer/gpay.svg" alt="Google Pay">
+                    </div>
+                    <div class="footer__pay">
+                        <img src="img/footer/samsungpay.svg" alt="Samsung Pay">
+                    </div>
+                    <div class="footer__pay">
+                        <img src="img/footer/amazonpay.svg" alt="Amazon Pay">
+                    </div>
+                    <div class="footer__pay">
+                        <img src="img/footer/worldbank.svg" alt="World Bank">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="footer__bottom">
+
+                <div class="footer__text">
+                    <p>
+                        By accessing and using this website, you acknowledge that all content is provided for
+                        demonstration purposes only.
+                        This project was created to showcase frontend development skills, including layout design,
+                        responsive behavior
+                        and interactive elements. It does not represent a real product, service or commercial platform.
+                        Any similarities
+                        to existing services are purely coincidental.
+                    </p>
+
+                    <p>
+                        The information presented on this website is intended solely to illustrate UI/UX concepts and
+                        development approaches.
+                        It should not be interpreted as professional advice or a functional solution. Users are
+                        encouraged to focus on the
+                        technical implementation and design aspects rather than any perceived real-world application.
+                    </p>
+
+                    <p>
+                        This project may include simulated data, placeholder content and example interactions to
+                        demonstrate functionality.
+                        No real user data is collected, processed or stored. Any forms or inputs are purely visual and
+                        do not submit
+                        information to external services.
+                    </p>
+
+                    <p>
+                        While effort has been made to ensure a smooth and consistent user experience, this website
+                        remains a demo project
+                        and may not reflect production-level optimization or full backend integration. Its primary
+                        purpose is to present
+                        frontend capabilities in a clear and structured manner.
+                    </p>
+
+                    <p>
+                        By continuing to browse this website, you agree that you understand its demonstrational nature
+                        and use it solely
+                        for reviewing design, layout and frontend implementation.
+                    </p>
+                </div>
+
+                <div class="footer__right">
+
+                    <div class="footer__column">
+                        <h4 class="footer__title">Navigation</h4>
+                        <ul class="footer__list">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="https://ponidevito.github.io/cv/" target="_blank">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__title">Links</h4>
+                        <ul class="footer__list">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                        </ul>
+
+                        <div class="footer__socials">
+
+                            <a href="#" target="_blank" rel="nofollow noopener noreferrer"><img
+                                    src="./img/social/facebook.svg" alt="Facebook"></a>
+                            <a href="#" target="_blank" rel="nofollow noopener noreferrer"><img
+                                    src="./img/social/insta.svg" alt="Instagram"></a>
+                            <a href="#" target="_blank" rel="nofollow noopener noreferrer"><img src="./img/social/x.svg"
+                                    alt="X"></a>
+                            <a href="#" target="_blank" rel="nofollow noopener noreferrer"><img
+                                    src="./img/social/link.svg" alt="Linkedin"></a>
+                            <a href="#" target="_blank" rel="nofollow noopener noreferrer"><img
+                                    src="./img/social/tube.svg" alt="Youtube"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+    </div>
+
+    <!-- Login modal -->
+    <!-- Login Modal -->
+<div class="login-modal" id="login-modal">
+
+    <div class="login-modal__overlay"></div>
+
+    <div class="login-modal__body">
+
+        <button class="login-modal__close" type="button" aria-label="Close modal">
+            ×
+        </button>
+
+        <div class="login-modal__content">
+
+            <div class="login-modal__form-wrapper">
+
+                <h3 class="login-modal__subtitle">
+                    Login
+                </h3>
+
+                <form class="login-form">
+
+                    <div class="login-form__field">
+                        <input class="login-form__input" type="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="login-form__field">
+                        <input class="login-form__input" type="password" placeholder="Password">
+                    </div>
+
+                    <button class="login-form__btn btn" type="submit">
+                        Sign In
+                    </button>
+
+                    <div class="login-form__bottom">
+
+                        <label class="login-form__remember">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+
+                        <a href="#" class="login-form__link">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+                    <p class="login-form__note">
+                        Demo login only. No real authentication is used.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/scripts.min.js"></script>
+</body>
+
+</html>
