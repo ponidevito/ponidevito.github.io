@@ -13,6 +13,7 @@
 | **🖼 Arik Portfolio** | [Відкрити](https://ponidevito.github.io/arik-portfolio/) | Персональне портфоліо з анімацією GSAP на головній |
 | **🎛 Diabet Calculator** | [Відкрити](https://ponidevito.github.io/diabet-calculator/) | Калькулятор дозування інсуліну + [Android APK][dia-calculator.apk](./dia-calculator.apk) |
 | **📋 CV / Resume** | [Відкрити](https://ponidevito.github.io/cv/) | Особиста сторінка-резюме |
+| **💻 Modern Frontend Landing** | [Відкрити](https://ponidevito.github.io/ok-landing/) | Responsive frontend landing page with interactive UI components, animations and modern SCSS architecture. |
 | **🎧 Podcast** | [Відкрити](https://ponidevito.github.io/podcast/) | Cайт для подкаст-платформи |
 | **🎨 Artificial** | [Відкрити](https://ponidevito.github.io/artificial/) | Лендинг із футуристичним дизайном |
 | **💼 John Smith Portfolio** | [Відкрити](https://ponidevito.github.io/john-smith-portfolio/) | Портфоліо-шаблон для дизайнера |
