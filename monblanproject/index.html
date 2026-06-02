@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monblan Project Gallery</title>
+
+    <meta name="description"
+        content="Monblan Project gallery with posts, statistics, date filtering and grid or list view.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <!-- fav -->
+    <link rel="icon" href="img/fav.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="bg-top"> <img src="img/left-bg.svg" alt="shape"></div>
+        <div class="bg-bottom"> <img src="img/right-bg.svg" alt="shape"></div>
+        <!-- Header -->
+        <header class="header">
+
+
+    <div class="header__container">
+        <div class="header__inner">
+
+            <a href="/" class="header__logo">
+                <img src="img/logo.svg" alt="Monblan Project">
+            </a>
+
+            <div class="header__content">
+
+                <div class="header__top">
+                    <h1 class="header__title">
+                        monblanproject
+                    </h1>
+
+                    <span class="header__badge">
+                        Start on 17-02-2016
+                    </span>
+                </div>
+
+                <div class="header__stats">
+
+                    <div class="header__stat">
+                        <strong>870</strong> posts
+                    </div>
+
+                    <div class="header__stat">
+                        <strong>11,787</strong> followers
+                    </div>
+
+                    <div class="header__stat">
+                        <strong>112</strong> following
+                    </div>
+
+                </div>
+
+                <div class="header__filters">
+                    <span class="header__label">Date</span>
+                    <div class="header__actions">
+                        <div class="header__field">
+                            <label class="visually-hidden" for="date-from">Date from </label>
+                            <input class="header__date js-datepicker" id="date-from" type="text" placeholder="from">
+
+
+                            <button class="header__clear" type="button">
+                                <img src="img/date-icons/close.svg" alt="Icon close">
+                            </button>
+
+                            <button class="header__calendar" type="button">
+                                <img src="img/date-icons/calendar.svg" alt="Icon calendar">
+                            </button>
+                        </div>
+
+
+                        <div class="header__field">
+                            <label class="visually-hidden" for="date-to"> Date to</label>
+                            <input class="header__date js-datepicker" id="date-to" type="text" placeholder="09_08_2016">
+
+
+                            <button class="header__clear" type="button">
+                                <img src="img/date-icons/close.svg" alt="Icon close">
+                            </button>
+
+                            <button class="header__calendar" type="button">
+                                <img src="img/date-icons/calendar.svg" alt="Icon calendar">
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</header>
+
+        <!-- Main Page -->
+        <main class="main">
+
+            <!-- Gallery -->
+            <section class="gallery">
+
+    <div class="gallery__container">
+
+        <div class="gallery__controls">
+            <button class="gallery__btn" aria-label="Grid view" data-view="tiles">
+                <svg width="24px" height="24px" viewBox="-0.5 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                    fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>icon/18/icon-grid-9</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs> </defs>
+                        <g id="out" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                            <path
+                                d="M1,13 L6,13 L6,17.8611111 L1,17.8611111 L1,13 L1,13 Z M1,7 L6,7 L6,11.8611111 L1,11.8611111 L1,7 L1,7 Z M1,1 L6,1 L6,5.86111111 L1,5.86111111 L1,1 L1,1 Z M7,13 L12,13 L12,17.8611111 L7,17.8611111 L7,13 L7,13 Z M7,7 L12,7 L12,11.8611111 L7,11.8611111 L7,7 L7,7 Z M7,1 L12,1 L12,5.86111111 L7,5.86111111 L7,1 L7,1 Z M13,13 L18,13 L18,17.8611111 L13,17.8611111 L13,13 L13,13 Z M13,7 L18,7 L18,11.8611111 L13,11.8611111 L13,7 L13,7 Z M13,1 L18,1 L18,5.86111111 L13,5.86111111 L13,1 L13,1 Z"
+                                id="path" fill="#C8C7C7" sketch:type="MSShapeGroup"> </path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+
+            <button class="gallery__btn" aria-label="List view" data-view="rows">
+                <svg width="24px" height="24px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M3 1H1V3H3V1Z" fill="#C8C7C7"></path>
+                        <path d="M3 5H1V7H3V5Z" fill="#C8C7C7"></path>
+                        <path d="M1 9H3V11H1V9Z" fill="#C8C7C7"></path>
+                        <path d="M3 13H1V15H3V13Z" fill="#C8C7C7"></path>
+                        <path d="M15 1H5V3H15V1Z" fill="#C8C7C7"></path>
+                        <path d="M15 5H5V7H15V5Z" fill="#C8C7C7"></path>
+                        <path d="M5 9H15V11H5V9Z" fill="#C8C7C7"></path>
+                        <path d="M15 13H5V15H15V13Z" fill="#C8C7C7"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+
+        <div class="gallery__list  gallery__list--rows">
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-1.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h2>Today</h2>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-2.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-3.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-4.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-5.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-6.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-7.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-8.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-9.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+                     <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-1.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-2.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-3.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-4.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-5.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-6.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-7.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-8.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="gallery__item">
+                <a href="#" class="gallery__image">
+                    <img src="img/gallery/post-9.png" alt="Today">
+                </a>
+                <div class="gallery__box">
+                    <div class="gallery__info">
+                        <h3>Today</h3>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__date">
+                        <div>9-08-2016</div>
+
+                        <div class="gallery__stats">
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/heart.svg" alt="Icon heart">
+                                <span>128</span>
+                            </div>
+
+                            <div class="gallery__stat">
+                                <img src="img/gallery/comments.svg" alt="Icon heart">
+                                <span>31</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="gallery__upload">
+                        <div>Image upload</div>
+                        <div>11-04-2016</div>
+                    </div>
+                </div>
+            </article>
+
+
+
+        </div>
+        <div class="gallery__actions">
+            <button type="button" class="gallery__load">
+                LOAD MORE
+            </button>
+        </div>
+    </div>
+</section>
+
+        </main>
+
+        <!-- Footer -->
+        
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./js/scripts.min.js"></script>
+</body>
+
+
+</html>
